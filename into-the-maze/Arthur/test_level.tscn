@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://k853sanxs4hq" path="res://Scenes/button/button.tscn" id="2_lsky8"]
 [ext_resource type="PackedScene" uid="uid://ba8tmddrsgu8t" path="res://Scenes/button/bomb_wall.tscn" id="3_xi1o6"]
 
-[node name="level_base" unique_id=402574150 instance=ExtResource("1_oees7")]
+[node name="test_level" unique_id=402574150 instance=ExtResource("1_oees7")]
 
 [node name="Player" parent="." index="0" unique_id=1499959281]
 position = Vector2(0, 129)
