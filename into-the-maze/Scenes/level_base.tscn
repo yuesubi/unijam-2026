@@ -1,0 +1,90 @@
+[gd_scene format=4 uid="uid://c7q4y8ug8og56"]
+
+[ext_resource type="Script" uid="uid://byr7hqnm7nkw8" path="res://Scripts/player.gd" id="1_c4c4a"]
+[ext_resource type="Script" uid="uid://bs8x67yy1mmhp" path="res://Scripts/level_base.gd" id="1_n5e7m"]
+[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://icon.svg" id="2_w0prl"]
+[ext_resource type="Texture2D" uid="uid://bwr88otwlhtrm" path="res://death.png" id="3_sfs8f"]
+[ext_resource type="Texture2D" uid="uid://bwke54eup5rlw" path="res://objective.png" id="4_3ne40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
+size = Vector2(117, 121)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s40qi"]
+texture = ExtResource("2_w0prl")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3kpl"]
+texture = ExtResource("4_3ne40")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx8um"]
+texture = ExtResource("3_sfs8f")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSet" id="TileSet_8b3hd"]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 2
+physics_layer_1/collision_mask = 2
+physics_layer_2/collision_layer = 4
+physics_layer_2/collision_mask = 4
+sources/0 = SubResource("TileSetAtlasSource_s40qi")
+sources/2 = SubResource("TileSetAtlasSource_hx8um")
+sources/1 = SubResource("TileSetAtlasSource_e3kpl")
+
+[node name="level_base" type="Node2D" unique_id=402574150]
+script = ExtResource("1_n5e7m")
+
+[node name="Player" type="Area2D" parent="." unique_id=1499959281]
+collision_layer = 3
+collision_mask = 7
+script = ExtResource("1_c4c4a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=170584220]
+self_modulate = Color(1, 0.7975, 0.19, 1)
+texture = ExtResource("2_w0prl")
+
+[node name="RayCast2D" type="RayCast2D" parent="Player" unique_id=533463902]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=868428351]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_8b3hd")
+
+[node name="invis_player" type="Area2D" parent="." unique_id=1802008750]
+position = Vector2(897, 124)
+collision_layer = 3
+collision_mask = 7
+script = ExtResource("1_c4c4a")
+
+[node name="Sprite2D" type="Sprite2D" parent="invis_player" unique_id=1184983573]
+self_modulate = Color(1, 0.7975, 0.19, 1)
+texture = ExtResource("2_w0prl")
+
+[node name="RayCast2D" type="RayCast2D" parent="invis_player" unique_id=1921811918]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="invis_player" unique_id=1017467290]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_8b3hd")
+
+[node name="Layer0" type="TileMapLayer" parent="." unique_id=1646785559]
+use_parent_material = true
+position = Vector2(-64, -64)
+tile_map_data = PackedByteArray("AAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAABAAQAAAAAAAAAAAABAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAEAAIAAgAAAAAAAAAFAAIAAgAAAAAAAAAFAAQAAAAAAAAAAAACAAIAAQAAAAAAAAAJAAEAAQAAAAAAAAAJAAMAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_8b3hd")
+
+[connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
+[connection signal="body_exited" from="Player" to="Player" method="_on_body_exited"]
+[connection signal="death" from="Player" to="." method="_on_death"]
+[connection signal="objective" from="Player" to="." method="_on_objective"]
+[connection signal="objective_left" from="Player" to="." method="_on_objective_left"]
+[connection signal="body_entered" from="invis_player" to="invis_player" method="_on_body_entered"]
+[connection signal="body_exited" from="invis_player" to="invis_player" method="_on_body_exited"]
+[connection signal="death" from="invis_player" to="." method="_on_death"]
+[connection signal="objective" from="invis_player" to="." method="_on_objective"]
+[connection signal="objective_left" from="invis_player" to="." method="_on_objective_left"]
