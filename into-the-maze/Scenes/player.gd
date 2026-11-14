@@ -1,7 +1,8 @@
 extends Area2D
 
-
 @onready var ray = $RayCast2D
+@export var tile_map: TileMap
+
 
 var tile_size = 128
 var inputs = {"ui_right": Vector2.RIGHT,
@@ -37,6 +38,10 @@ func move(dir):
 		moving = true
 		await tween.finished
 		moving = false
+		var tile_pos = tile_map.local_to_map(position)
+		if (tile_map.get_cell_atlas_coords(tile_pos) == Vector2i(1, 0)) :
+			print("YOU FUCKING DIE BOZO !")
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
