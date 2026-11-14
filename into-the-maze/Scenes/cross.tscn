@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b1rilyvksuapx" path="res://Sprites/DeadGodot.png" id="2_3nhan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(129, 128)
+size = Vector2(123, 124)
 
 [node name="Cross" type="Node2D" unique_id=1534349165]
 
@@ -17,5 +17,7 @@ texture = ExtResource("2_3nhan")
 [node name="RayCast2D" type="RayCast2D" parent="Area2D" unique_id=500418662]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1730819939]
-position = Vector2(0.5, 0)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_g4v7s")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
