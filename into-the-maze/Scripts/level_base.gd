@@ -24,3 +24,4 @@ func _on_objective() -> void:
 
 func _on_objective_left() -> void:
 	objective-=1
+	print(objective)

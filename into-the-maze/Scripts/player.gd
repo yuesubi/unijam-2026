@@ -54,3 +54,25 @@ func _on_body_entered(body: Node2D) -> void:
 func _on_body_exited(body: Node2D) -> void:
 	if not get_collision_mask_value(3):
 		objective_left.emit()
+
+
+func _on_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	var layer:int
+	if body is TileMapLayer:
+		var coords = body.get_coords_for_body_rid(body_rid)
+		var tile_data = body.get_cell_tile_data(coords)
+		layer=tile_data.get_custom_data("layer")
+	if layer==1:
+		death.emit()
+	if layer==2:
+		objective.emit()
+
+
+func _on_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+	var layer:int
+	if body is TileMapLayer:
+		var coords = body.get_coords_for_body_rid(body_rid)
+		var tile_data = body.get_cell_tile_data(coords)
+		layer=tile_data.get_custom_data("layer")
+	if layer==2:
+		objective_left.emit()
