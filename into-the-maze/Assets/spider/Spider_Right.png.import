@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://865xssitah35"
-path="res://.godot/imported/Spider_Left.png-2c4a34b11b4b08f9b785db6fb1acb2bd.ctex"
+uid="uid://cf2lsp2od0ra7"
+path="res://.godot/imported/Spider_Right.png-c27076eb66853e4eb6c9b63cc320c853.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Version_2_design/Spider_Left.png"
-dest_files=["res://.godot/imported/Spider_Left.png-2c4a34b11b4b08f9b785db6fb1acb2bd.ctex"]
+source_file="res://Assets/spider/Spider_Right.png"
+dest_files=["res://.godot/imported/Spider_Right.png-c27076eb66853e4eb6c9b63cc320c853.ctex"]
 
 [params]
 

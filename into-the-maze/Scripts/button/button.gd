@@ -4,7 +4,6 @@ class_name FillButton
 @export var linked_walls: Array[StaticBody2D]
 @export var linked_buttons: Array[FillButton] 
 
-var pressed_image = load("res://Assets/godot/pressed_button.png")
 @onready var sprite = $Sprite2D
 var tile_size = 128
 # Called when the node enters the scene tree for the first time.
@@ -13,7 +12,7 @@ func _ready() -> void:
 
 func press():
 	set_collision_mask_value(1, false)
-	sprite.texture = pressed_image
+	sprite.modulate = Color(1,1,1,0.5)
 	
 
 func _on_area_entered(area: Area2D) -> void:

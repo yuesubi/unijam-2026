@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf2lsp2od0ra7"
-path="res://.godot/imported/Spider_Right.png-cedc89952caa9b8cd1124b00612d18f2.ctex"
+uid="uid://ca53g13whqhuq"
+path="res://.godot/imported/Bouton_Radar.png-291547cb80957055fc7791060fec05cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Version_2_design/Spider_Right.png"
-dest_files=["res://.godot/imported/Spider_Right.png-cedc89952caa9b8cd1124b00612d18f2.ctex"]
+source_file="res://Assets/button/Bouton_Radar.png"
+dest_files=["res://.godot/imported/Bouton_Radar.png-291547cb80957055fc7791060fec05cc.ctex"]
 
 [params]
 

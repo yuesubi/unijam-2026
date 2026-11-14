@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_oees7"]
 [ext_resource type="PackedScene" uid="uid://k853sanxs4hq" path="res://Scenes/button/button.tscn" id="2_lsky8"]
 [ext_resource type="PackedScene" uid="uid://ba8tmddrsgu8t" path="res://Scenes/button/bomb_wall.tscn" id="3_xi1o6"]
+[ext_resource type="PackedScene" uid="uid://c5ei7li4risa4" path="res://Scenes/button/radar_button.tscn" id="4_v1qq4"]
 
 [node name="test_level" unique_id=402574150 instance=ExtResource("1_oees7")]
 
@@ -23,7 +24,7 @@ position = Vector2(386, 124)
 linked_walls = [NodePath("../StaticBody2D")]
 linked_buttons = [NodePath("../button2")]
 
-[node name="button2" parent="." index="5" unique_id=2133755945 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_lsky8")]
-position = Vector2(514, 390)
+[node name="button2" parent="." index="5" unique_id=56636828 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_v1qq4")]
+position = Vector2(509, 379)
 linked_walls = [NodePath("../StaticBody2D")]
 linked_buttons = [NodePath("../button")]

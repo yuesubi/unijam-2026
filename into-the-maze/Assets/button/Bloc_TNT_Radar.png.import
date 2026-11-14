@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cysmwq83vay8i"
-path="res://.godot/imported/Spider_Down.png-c19c6faf4d37a9884e0fb1e9fd27b0eb.ctex"
+uid="uid://cvsshbikbuv3r"
+path="res://.godot/imported/Bloc_TNT_Radar.png-908b70ded4dfe8f0cb9c970493e252bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Version_2_design/Spider_Down.png"
-dest_files=["res://.godot/imported/Spider_Down.png-c19c6faf4d37a9884e0fb1e9fd27b0eb.ctex"]
+source_file="res://Assets/button/Bloc_TNT_Radar.png"
+dest_files=["res://.godot/imported/Bloc_TNT_Radar.png-908b70ded4dfe8f0cb9c970493e252bb.ctex"]
 
 [params]
 
