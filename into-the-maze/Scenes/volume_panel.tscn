@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://bsbcv6n746omc"]
+
+[ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_pnxrd"]
+[ext_resource type="Texture2D" uid="uid://da53j86aa1aid" path="res://Sprites/black.png" id="2_xhsew"]
+[ext_resource type="Script" uid="uid://lbcwm6k0vsv2" path="res://Scripts/SoundManagers/volume_control.gd" id="3_pbxk5"]
+
+[node name="VolumePanel" type="TextureRect" unique_id=1826358502]
+self_modulate = Color(1, 1, 1, 0.7372549)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -250.0
+offset_right = 300.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pnxrd")
+texture = ExtResource("2_xhsew")
+script = ExtResource("3_pbxk5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=557756988]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -239.0
+offset_top = -21.5
+offset_right = 239.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PageTitle" type="Label" parent="VBoxContainer" unique_id=1251941024]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Volume control"
+
+[node name="Master" type="VBoxContainer" parent="VBoxContainer" unique_id=1857736732]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Master" unique_id=1713372274]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Master"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="VBoxContainer/Master" unique_id=1585115272]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Soundtrack" type="VBoxContainer" parent="VBoxContainer" unique_id=69714459]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Soundtrack" unique_id=1560053025]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Soundtrack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SoundtrackSlider" type="HSlider" parent="VBoxContainer/Soundtrack" unique_id=379426419]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="SFX" type="VBoxContainer" parent="VBoxContainer" unique_id=785889215]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/SFX" unique_id=373326506]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SFX"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="VBoxContainer/SFX" unique_id=278004213]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Control" type="Control" parent="VBoxContainer" unique_id=37443029]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="BackButton" type="Button" parent="." unique_id=1154958420]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -70.842834
+offset_bottom = 70.22601
+grow_horizontal = 0
+text = "X"
+
+[connection signal="value_changed" from="VBoxContainer/Master/MasterSlider" to="." method="_on_master_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/Soundtrack/SoundtrackSlider" to="." method="_on_soundtrack_slider_value_changed"]
+[connection signal="drag_ended" from="VBoxContainer/SFX/SFXSlider" to="." method="_on_sfx_slider_drag_ended"]
+[connection signal="value_changed" from="VBoxContainer/SFX/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="mouse_entered" from="BackButton" to="." method="_on_back_button_mouse_entered"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

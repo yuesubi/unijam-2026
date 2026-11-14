@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwr88otwlhtrm"
-path="res://.godot/imported/death.png-cf2d4c96e4698d246b2d718ac9a90534.ctex"
+uid="uid://ca53g13whqhuq"
+path="res://.godot/imported/Bouton_Radar.png-291547cb80957055fc7791060fec05cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://death.png"
-dest_files=["res://.godot/imported/death.png-cf2d4c96e4698d246b2d718ac9a90534.ctex"]
+source_file="res://Assets/button/Bouton_Radar.png"
+dest_files=["res://.godot/imported/Bouton_Radar.png-291547cb80957055fc7791060fec05cc.ctex"]
 
 [params]
 
