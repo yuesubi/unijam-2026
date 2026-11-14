@@ -20,12 +20,14 @@ texture = ExtResource("4_3ne40")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx8um"]
 texture = ExtResource("3_sfs8f")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 1
 
 [sub_resource type="TileSet" id="TileSet_8b3hd"]
 tile_size = Vector2i(128, 128)
@@ -34,6 +36,8 @@ physics_layer_1/collision_layer = 2
 physics_layer_1/collision_mask = 2
 physics_layer_2/collision_layer = 4
 physics_layer_2/collision_mask = 4
+custom_data_layer_0/name = "layer"
+custom_data_layer_0/type = 2
 sources/0 = SubResource("TileSetAtlasSource_s40qi")
 sources/2 = SubResource("TileSetAtlasSource_hx8um")
 sources/1 = SubResource("TileSetAtlasSource_e3kpl")
@@ -77,14 +81,15 @@ use_parent_material = true
 position = Vector2(-64, -64)
 tile_map_data = PackedByteArray("AAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAABAAQAAAAAAAAAAAABAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAEAAIAAgAAAAAAAAAFAAIAAgAAAAAAAAAFAAQAAAAAAAAAAAACAAIAAQAAAAAAAAAJAAEAAQAAAAAAAAAJAAMAAQAAAAAAAAA=")
 tile_set = SubResource("TileSet_8b3hd")
+physics_quadrant_size = 1
 
-[connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
-[connection signal="body_exited" from="Player" to="Player" method="_on_body_exited"]
+[connection signal="body_shape_entered" from="Player" to="Player" method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="Player" to="Player" method="_on_body_shape_exited"]
 [connection signal="death" from="Player" to="." method="_on_death"]
 [connection signal="objective" from="Player" to="." method="_on_objective"]
 [connection signal="objective_left" from="Player" to="." method="_on_objective_left"]
-[connection signal="body_entered" from="invis_player" to="invis_player" method="_on_body_entered"]
-[connection signal="body_exited" from="invis_player" to="invis_player" method="_on_body_exited"]
+[connection signal="body_shape_entered" from="invis_player" to="invis_player" method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="invis_player" to="invis_player" method="_on_body_shape_exited"]
 [connection signal="death" from="invis_player" to="." method="_on_death"]
 [connection signal="objective" from="invis_player" to="." method="_on_objective"]
 [connection signal="objective_left" from="invis_player" to="." method="_on_objective_left"]
