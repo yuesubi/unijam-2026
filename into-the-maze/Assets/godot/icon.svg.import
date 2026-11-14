@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwr88otwlhtrm"
-path="res://.godot/imported/death.png-cf2d4c96e4698d246b2d718ac9a90534.ctex"
+uid="uid://crl62p78pu4c8"
+path="res://.godot/imported/icon.svg-1d840842c1e6a6b5fbf4326b66efd89a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://death.png"
-dest_files=["res://.godot/imported/death.png-cf2d4c96e4698d246b2d718ac9a90534.ctex"]
+source_file="res://Assets/godot/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-1d840842c1e6a6b5fbf4326b66efd89a.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

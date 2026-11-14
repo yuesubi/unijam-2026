@@ -2,30 +2,75 @@
 
 [ext_resource type="Script" uid="uid://byr7hqnm7nkw8" path="res://Scripts/player.gd" id="1_c4c4a"]
 [ext_resource type="Script" uid="uid://bs8x67yy1mmhp" path="res://Scripts/level_base.gd" id="1_n5e7m"]
-[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://icon.svg" id="2_w0prl"]
-[ext_resource type="Texture2D" uid="uid://bwr88otwlhtrm" path="res://death.png" id="3_sfs8f"]
-[ext_resource type="Texture2D" uid="uid://bwke54eup5rlw" path="res://objective.png" id="4_3ne40"]
+[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://Assets/godot/icon.svg" id="2_w0prl"]
+[ext_resource type="Texture2D" uid="uid://tv6ruyju6u5q" path="res://Assets/Version_1_design/Bloc_Radar.png" id="4_xnoyx"]
+[ext_resource type="Texture2D" uid="uid://dme4sexdjrhx5" path="res://Assets/Version_1_design/Bloc_Victoire_Radar.png" id="5_3bmkt"]
+[ext_resource type="Texture2D" uid="uid://c3lcjb48sb7d0" path="res://Assets/Version_1_design/Bloc_Reel.png" id="6_2ssho"]
+[ext_resource type="Texture2D" uid="uid://b1nsp0jjhpult" path="res://Assets/void.png" id="6_3bmkt"]
+[ext_resource type="Texture2D" uid="uid://c8dmphlyub120" path="res://Assets/Version_1_design/Bloc_Mur_Reel.png" id="7_a8nbr"]
+[ext_resource type="Texture2D" uid="uid://060jmhuhic05" path="res://Assets/Version_1_design/Acid_reel.png" id="8_16v77"]
+[ext_resource type="Texture2D" uid="uid://j3evjhsdhbp" path="res://Assets/Version_1_design/Bloc_Victoire_Reel.png" id="9_77ilv"]
+[ext_resource type="Texture2D" uid="uid://c0vg5t0qva6h4" path="res://Assets/Version_1_design/Acid_Radar.png" id="10_0juvt"]
+[ext_resource type="Texture2D" uid="uid://d2y70bw5wvl28" path="res://Assets/Version_1_design/Bloc_Mur_Radar.png" id="11_306k7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s40qi"]
-texture = ExtResource("2_w0prl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uumhc"]
+texture = ExtResource("4_xnoyx")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1mcx1"]
+texture = ExtResource("5_3bmkt")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 2
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3bmkt"]
+texture = ExtResource("6_3bmkt")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3kpl"]
-texture = ExtResource("4_3ne40")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnrhr"]
+texture = ExtResource("6_2ssho")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
-0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx8um"]
-texture = ExtResource("3_sfs8f")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qn2pf"]
+texture = ExtResource("7_a8nbr")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vklvw"]
+texture = ExtResource("8_16v77")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_83hxs"]
+texture = ExtResource("9_77ilv")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 2
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kiqcr"]
+texture = ExtResource("10_0juvt")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_286xb"]
+texture = ExtResource("11_306k7")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
 [sub_resource type="TileSet" id="TileSet_8b3hd"]
 tile_size = Vector2i(128, 128)
@@ -34,57 +79,77 @@ physics_layer_1/collision_layer = 2
 physics_layer_1/collision_mask = 2
 physics_layer_2/collision_layer = 4
 physics_layer_2/collision_mask = 4
-sources/0 = SubResource("TileSetAtlasSource_s40qi")
-sources/2 = SubResource("TileSetAtlasSource_hx8um")
-sources/1 = SubResource("TileSetAtlasSource_e3kpl")
+physics_layer_3/collision_layer = 8
+physics_layer_3/collision_mask = 8
+custom_data_layer_0/name = "layer"
+custom_data_layer_0/type = 2
+sources/4 = SubResource("TileSetAtlasSource_lnrhr")
+sources/5 = SubResource("TileSetAtlasSource_qn2pf")
+sources/6 = SubResource("TileSetAtlasSource_vklvw")
+sources/7 = SubResource("TileSetAtlasSource_83hxs")
+sources/8 = SubResource("TileSetAtlasSource_kiqcr")
+sources/9 = SubResource("TileSetAtlasSource_286xb")
+sources/10 = SubResource("TileSetAtlasSource_uumhc")
+sources/11 = SubResource("TileSetAtlasSource_1mcx1")
+sources/16 = SubResource("TileSetAtlasSource_3bmkt")
 
 [node name="level_base" type="Node2D" unique_id=402574150]
 script = ExtResource("1_n5e7m")
 
 [node name="Player" type="Area2D" parent="." unique_id=1499959281]
-collision_layer = 3
-collision_mask = 7
+position = Vector2(4, 5)
+collision_layer = 15
+collision_mask = 255
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=170584220]
 self_modulate = Color(1, 0.7975, 0.19, 1)
+position = Vector2(64, 64)
 texture = ExtResource("2_w0prl")
 
 [node name="RayCast2D" type="RayCast2D" parent="Player" unique_id=533463902]
+position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=868428351]
-position = Vector2(0.5, 0.5)
+position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_8b3hd")
 
 [node name="invis_player" type="Area2D" parent="." unique_id=1802008750]
 position = Vector2(897, 124)
 collision_layer = 3
-collision_mask = 7
+collision_mask = 15
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="invis_player" unique_id=1184983573]
 self_modulate = Color(1, 0.7975, 0.19, 1)
+position = Vector2(64, 64)
 texture = ExtResource("2_w0prl")
 
 [node name="RayCast2D" type="RayCast2D" parent="invis_player" unique_id=1921811918]
+position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="invis_player" unique_id=1017467290]
-position = Vector2(0.5, 0.5)
+position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_8b3hd")
 
-[node name="Layer0" type="TileMapLayer" parent="." unique_id=1646785559]
+[node name="TileMap" type="TileMapLayer" parent="." unique_id=1646785559]
+z_index = -10
 use_parent_material = true
-position = Vector2(-64, -64)
-tile_map_data = PackedByteArray("AAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAABAAQAAAAAAAAAAAABAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAEAAIAAgAAAAAAAAAFAAIAAgAAAAAAAAAFAAQAAAAAAAAAAAACAAIAAQAAAAAAAAAJAAEAAQAAAAAAAAAJAAMAAQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAIAAEABwAAAAAAAAAIAAMABwAAAAAAAAABAAIABwAAAAAAAAABAAAABAAAAAAAAAACAAAAEAAAAAAAAAADAAAAEAAAAAAAAAAEAAAAEAAAAAAAAAAEAAEAEAAAAAAAAAAFAAEABAAAAAAAAAAFAAAABAAAAAAAAAADAAEAEAAAAAAAAAACAAEAEAAAAAAAAAABAAEABAAAAAAAAAACAAIABAAAAAAAAAACAAMABAAAAAAAAAABAAMABAAAAAAAAAABAAQABAAAAAAAAAAEAAMABAAAAAAAAAAFAAMABAAAAAAAAAAGAAMABAAAAAAAAAADAAMABAAAAAAAAAAFAAIABAAAAAAAAAAGAAQABAAAAAAAAAAGAAAABAAAAAAAAAAGAAEABAAAAAAAAAAHAAAABAAAAAAAAAAIAAAABAAAAAAAAAAIAAIABAAAAAAAAAAHAAIABAAAAAAAAAAHAAMABAAAAAAAAAAHAAQABAAAAAAAAAAIAAQABAAAAAAAAAAJAAAABQAAAAAAAAAJAAEABQAAAAAAAAAJAAIABQAAAAAAAAAJAAMABQAAAAAAAAAJAAQABQAAAAAAAAAAAAEABQAAAAAAAAAAAAIABQAAAAAAAAAAAAMABQAAAAAAAAAAAAQABQAAAAAAAAACAAQABQAAAAAAAAADAAQABQAAAAAAAAAEAAQABQAAAAAAAAAFAAQABQAAAAAAAAAGAAIABQAAAAAAAAADAAIABgAAAAAAAAAEAAIABgAAAAAAAAD/////BQAAAAAAAAD//wAABQAAAAAAAAD//wEABQAAAAAAAAD//wIABQAAAAAAAAD//wMABQAAAAAAAAD//wQABQAAAAAAAAD//wUABQAAAAAAAAAAAAUABQAAAAAAAAABAAUABQAAAAAAAAACAAUABQAAAAAAAAADAAUABQAAAAAAAAAEAAUABQAAAAAAAAAFAAUABQAAAAAAAAAGAAUABQAAAAAAAAAHAAUABQAAAAAAAAAIAAUABQAAAAAAAAAJAAUABQAAAAAAAAAJAP//BQAAAAAAAAAIAP//BQAAAAAAAAAHAP//BQAAAAAAAAAGAP//BQAAAAAAAAAFAP//BQAAAAAAAAAEAP//BQAAAAAAAAADAP//BQAAAAAAAAACAP//BQAAAAAAAAABAP//BQAAAAAAAAAAAP//BQAAAAAAAAAHAAEABAAAAAAAAAAAAAAABAAAAAAAAAA=")
 tile_set = SubResource("TileSet_8b3hd")
+physics_quadrant_size = 1
 
-[connection signal="body_entered" from="Player" to="Player" method="_on_body_entered"]
-[connection signal="body_exited" from="Player" to="Player" method="_on_body_exited"]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1721326176]
+position = Vector2(587, 327)
+zoom = Vector2(0.605, 0.605)
+
+[connection signal="body_shape_entered" from="Player" to="Player" method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="Player" to="Player" method="_on_body_shape_exited"]
 [connection signal="death" from="Player" to="." method="_on_death"]
 [connection signal="objective" from="Player" to="." method="_on_objective"]
 [connection signal="objective_left" from="Player" to="." method="_on_objective_left"]
-[connection signal="body_entered" from="invis_player" to="invis_player" method="_on_body_entered"]
-[connection signal="body_exited" from="invis_player" to="invis_player" method="_on_body_exited"]
+[connection signal="body_shape_entered" from="invis_player" to="invis_player" method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="invis_player" to="invis_player" method="_on_body_shape_exited"]
 [connection signal="death" from="invis_player" to="." method="_on_death"]
 [connection signal="objective" from="invis_player" to="." method="_on_objective"]
 [connection signal="objective_left" from="invis_player" to="." method="_on_objective_left"]

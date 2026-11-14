@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwke54eup5rlw"
-path="res://.godot/imported/objective.png-78d71617ffa67c879922c6d6dc8bb8d1.ctex"
+uid="uid://j3evjhsdhbp"
+path="res://.godot/imported/Bloc_Victoire_Reel.png-a6a15b5a690c9b11c19f97ce52752680.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://objective.png"
-dest_files=["res://.godot/imported/objective.png-78d71617ffa67c879922c6d6dc8bb8d1.ctex"]
+source_file="res://Assets/Version_1_design/Bloc_Victoire_Reel.png"
+dest_files=["res://.godot/imported/Bloc_Victoire_Reel.png-a6a15b5a690c9b11c19f97ce52752680.ctex"]
 
 [params]
 

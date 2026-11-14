@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://qbaxtb8ic63" path="res://Scripts/mounir2_base.gd" id="1_syxu8"]
 [ext_resource type="Script" uid="uid://do8rv4whn2imr" path="res://Scripts/mounir2.gd" id="2_syxu8"]
-[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://icon.svg" id="2_tvgc5"]
-[ext_resource type="Texture2D" uid="uid://bwr88otwlhtrm" path="res://death.png" id="3_syxu8"]
-[ext_resource type="Texture2D" uid="uid://bwke54eup5rlw" path="res://objective.png" id="4_c3pep"]
+[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://Assets/godot/icon.svg" id="2_tvgc5"]
+[ext_resource type="Texture2D" uid="uid://bwke54eup5rlw" path="res://Assets/godot/objective.png" id="4_c3pep"]
+[ext_resource type="Texture2D" uid="uid://bwr88otwlhtrm" path="res://Assets/godot/death.png" id="5_syxu8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
@@ -22,7 +22,7 @@ texture_region_size = Vector2i(128, 128)
 0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hx8um"]
-texture = ExtResource("3_syxu8")
+texture = ExtResource("5_syxu8")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
