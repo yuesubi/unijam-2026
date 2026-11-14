@@ -20,4 +20,4 @@ var BlowUp = preload("res://Sounds/SFX/BlowUp.wav")
 
 
 func play(audio: AudioStream) -> void:
-	audioStream.play_stream(audio)
+	if audioStream != null : audioStream.play_stream(audio)
