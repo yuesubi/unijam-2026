@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://sfyh4a5wk1ag"]
 
 [ext_resource type="Script" uid="uid://ddqxj2n5np3vh" path="res://Scripts/mounir_cross.gd" id="1_angqo"]
-[ext_resource type="Texture2D" uid="uid://b1rilyvksuapx" path="res://Sprites/DeadGodot.png" id="2_3nhan"]
+[ext_resource type="Texture2D" uid="uid://d1b52jvhad60m" path="res://Assets/Cross.png" id="2_angqo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(123, 124)
@@ -12,7 +12,7 @@ size = Vector2(123, 124)
 script = ExtResource("1_angqo")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1395475833]
-texture = ExtResource("2_3nhan")
+texture = ExtResource("2_angqo")
 
 [node name="RayCast2D" type="RayCast2D" parent="Area2D" unique_id=500418662]
 
