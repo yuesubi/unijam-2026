@@ -52,7 +52,7 @@ sources/2 = SubResource("TileSetAtlasSource_2ssho")
 sources/11 = SubResource("TileSetAtlasSource_e3kpl")
 tile_proxies/coords_level = [[3, Vector2i(0, 0)], [11, Vector2i(0, 0)], [4, Vector2i(0, 0)], [11, Vector2i(1, 0)], [5, Vector2i(0, 0)], [11, Vector2i(2, 0)], [6, Vector2i(0, 0)], [11, Vector2i(3, 0)], [7, Vector2i(0, 0)], [11, Vector2i(0, 1)], [8, Vector2i(0, 0)], [11, Vector2i(1, 1)], [9, Vector2i(0, 0)], [11, Vector2i(2, 1)], [10, Vector2i(0, 0)], [11, Vector2i(3, 1)]]
 
-[node name="level_base" type="Node2D" unique_id=402574150]
+[node name="level_base2" type="Node2D" unique_id=402574150]
 script = ExtResource("1_n5e7m")
 
 [node name="Player" type="Area2D" parent="." unique_id=1499959281]
@@ -75,7 +75,7 @@ shape = SubResource("RectangleShape2D_8b3hd")
 [node name="invis_player" type="Area2D" parent="." unique_id=1802008750]
 position = Vector2(897, 124)
 collision_layer = 3
-collision_mask = 15
+collision_mask = 255
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="invis_player" unique_id=1184983573]
@@ -102,12 +102,14 @@ physics_quadrant_size = 1
 position = Vector2(587, 327)
 zoom = Vector2(0.605, 0.605)
 
+[connection signal="area_entered" from="Player" to="Player" method="_on_area_entered"]
 [connection signal="body_shape_entered" from="Player" to="Player" method="_on_body_shape_entered"]
 [connection signal="body_shape_exited" from="Player" to="Player" method="_on_body_shape_exited"]
 [connection signal="death" from="Player" to="." method="_on_death"]
 [connection signal="movement_ended" from="Player" to="Player" method="_on_movement_ended"]
 [connection signal="objective" from="Player" to="." method="_on_objective"]
 [connection signal="objective_left" from="Player" to="." method="_on_objective_left"]
+[connection signal="area_entered" from="invis_player" to="invis_player" method="_on_area_entered"]
 [connection signal="body_shape_entered" from="invis_player" to="invis_player" method="_on_body_shape_entered"]
 [connection signal="body_shape_exited" from="invis_player" to="invis_player" method="_on_body_shape_exited"]
 [connection signal="death" from="invis_player" to="." method="_on_death"]

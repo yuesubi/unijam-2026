@@ -23,6 +23,7 @@ signal movement_ended
 
 var animation_speed = 6.7
 var moving = false
+var warping = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -81,3 +82,13 @@ func _on_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, l
 		layer=tile_data.get_custom_data("layer")
 	if layer==2:
 		objective_left.emit()
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if area is Portal:
+		if warping:
+			warping = false
+		else:
+			warping = true
+			var next_pos = area.linkedPortal.position
+			position = next_pos.snapped(Vector2.ONE * tile_size)
