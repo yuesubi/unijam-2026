@@ -46,18 +46,21 @@ sources/1 = SubResource("TileSetAtlasSource_e3kpl")
 script = ExtResource("1_n5e7m")
 
 [node name="Player" type="Area2D" parent="." unique_id=1499959281]
+position = Vector2(4, 5)
 collision_layer = 3
 collision_mask = 7
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=170584220]
 self_modulate = Color(1, 0.7975, 0.19, 1)
+position = Vector2(64, 64)
 texture = ExtResource("2_w0prl")
 
 [node name="RayCast2D" type="RayCast2D" parent="Player" unique_id=533463902]
+position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=868428351]
-position = Vector2(0.5, 0.5)
+position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_8b3hd")
 
 [node name="invis_player" type="Area2D" parent="." unique_id=1802008750]
@@ -68,17 +71,18 @@ script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="invis_player" unique_id=1184983573]
 self_modulate = Color(1, 0.7975, 0.19, 1)
+position = Vector2(64, 64)
 texture = ExtResource("2_w0prl")
 
 [node name="RayCast2D" type="RayCast2D" parent="invis_player" unique_id=1921811918]
+position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="invis_player" unique_id=1017467290]
-position = Vector2(0.5, 0.5)
+position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_8b3hd")
 
 [node name="Layer0" type="TileMapLayer" parent="." unique_id=1646785559]
 use_parent_material = true
-position = Vector2(-64, -64)
 tile_map_data = PackedByteArray("AAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAABAAQAAAAAAAAAAAABAAMAAAAAAAAAAAABAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAEAAIAAgAAAAAAAAAFAAIAAgAAAAAAAAAFAAQAAAAAAAAAAAACAAIAAQAAAAAAAAAJAAEAAQAAAAAAAAAJAAMAAQAAAAAAAAA=")
 tile_set = SubResource("TileSet_8b3hd")
 physics_quadrant_size = 1
