@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf2lsp2od0ra7"
-path="res://.godot/imported/Spider_Right.png-cedc89952caa9b8cd1124b00612d18f2.ctex"
+path="res://.godot/imported/Spider_Right.png-c27076eb66853e4eb6c9b63cc320c853.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Version_2_design/Spider_Right.png"
-dest_files=["res://.godot/imported/Spider_Right.png-cedc89952caa9b8cd1124b00612d18f2.ctex"]
+source_file="res://Assets/spider/Spider_Right.png"
+dest_files=["res://.godot/imported/Spider_Right.png-c27076eb66853e4eb6c9b63cc320c853.ctex"]
 
 [params]
 

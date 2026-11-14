@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://865xssitah35"
-path="res://.godot/imported/Spider_Left.png-2c4a34b11b4b08f9b785db6fb1acb2bd.ctex"
+path="res://.godot/imported/Spider_Left.png-50dc2f9dbccf1c839711896d1b2626a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Version_2_design/Spider_Left.png"
-dest_files=["res://.godot/imported/Spider_Left.png-2c4a34b11b4b08f9b785db6fb1acb2bd.ctex"]
+source_file="res://Assets/spider/Spider_Left.png"
+dest_files=["res://.godot/imported/Spider_Left.png-50dc2f9dbccf1c839711896d1b2626a3.ctex"]
 
 [params]
 
