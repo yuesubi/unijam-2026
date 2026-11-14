@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ddtidhypefqra"]
+
+[ext_resource type="Script" uid="uid://bo6vkem8xtfkd" path="res://Scripts/Portal/Portal.gd" id="1_r5egq"]
+[ext_resource type="Texture2D" uid="uid://dclch0rp4p8mp" path="res://Assets/portal/Bloc_Portail_Raddar.png" id="2_r5egq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k41lo"]
+size = Vector2(101, 96)
+
+[node name="Portal" type="Area2D" unique_id=1833809616]
+z_index = -1
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("1_r5egq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=299780092]
+position = Vector2(64, 64)
+texture = ExtResource("2_r5egq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1999173525]
+position = Vector2(64, 64)
+shape = SubResource("RectangleShape2D_k41lo")
