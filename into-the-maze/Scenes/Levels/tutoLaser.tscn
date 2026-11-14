@@ -1,0 +1,48 @@
+[gd_scene format=4 uid="uid://cihgel6fm4w3l"]
+
+[ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_fjdqc"]
+[ext_resource type="PackedScene" uid="uid://ca3mxg3j3gm5h" path="res://Scenes/portal/portal.tscn" id="2_f20yq"]
+[ext_resource type="PackedScene" uid="uid://ddtidhypefqra" path="res://Scenes/portal/portal_radar.tscn" id="3_vm37b"]
+
+[node name="level_base" unique_id=402574150 instance=ExtResource("1_fjdqc")]
+
+[node name="Player" parent="." index="0" unique_id=1499959281]
+position = Vector2(767, -260)
+
+[node name="invis_player" parent="." index="1" unique_id=1802008750]
+position = Vector2(516, 387)
+collision_mask = 15
+
+[node name="Sprite2D" parent="invis_player" index="0" unique_id=1184983573]
+visible = true
+
+[node name="TileMap" parent="." index="2" unique_id=1646785559]
+tile_map_data = PackedByteArray("AAD///7/CwACAAAAAAD/////CwAAAAAAAAD//wAACwAAAAAAAAD//wEACwAAAAAAAAD//wIACwAAAAAAAAD//wMACwAAAAAAAAD//wQACwAAAAAAAAD//wUACwAAAAAAAAAAAAQACwAAAAAAAAABAAMACwAAAAAAAAACAAIACwAAAAAAAAADAAEACwAAAAAAAAAEAAAACwAAAAAAAAAFAP//CwACAAAAAAAGAP7/CwAAAAAAAAAFAP7/CwAAAAAAAAAEAP7/CwACAAAAAAADAP7/CwAAAAAAAAACAP7/CwAAAAAAAAABAP7/CwAAAAAAAAAAAP7/CwADAAAAAAAAAP//CwACAAAAAAAAAAAACwAAAAAAAAAAAAEACwAAAAAAAAAAAAIACwAAAAAAAAAAAAMACwAAAAAAAAABAAIACwAAAAAAAAACAAEACwACAAAAAAADAAAACwAAAAAAAAAEAP//CwAAAAAAAAADAP//CwAAAAAAAAACAP//CwAAAAAAAAABAP//CwAAAAAAAAABAAAACwACAAAAAAABAAEACwAAAAAAAAACAAAACwAAAAAAAAADAAQACwAAAAEAAAAEAAMACwAAAAEAAAAFAAIACwACAAEAAAAGAAEACwAAAAEAAAAHAAAACwAAAAEAAAAIAP//CwADAAEAAAAIAAAACwAAAAEAAAAIAAEACwAAAAEAAAAIAAIACwAAAAEAAAAIAAMACwAAAAEAAAAIAAQACwAAAAEAAAAIAAUACwACAAEAAAAHAAUACwAAAAEAAAAGAAUACwAAAAEAAAAFAAUACwAAAAEAAAAEAAUACwACAAEAAAADAAUACwAAAAEAAAAEAAQACwAAAAEAAAAFAAQACwAAAAEAAAAFAAMACwAAAAEAAAAGAAMACwACAAEAAAAGAAIACwAAAAEAAAAHAAIACwAAAAEAAAAHAAEACwAAAAEAAAAHAAMACwAAAAEAAAAHAAQACwACAAEAAAAGAAQACwAAAAEAAAAIAAYAAgAAAAAAAAAHAAYAAgAAAAAAAAAGAAYAAgAAAAAAAAAFAAYAAgAAAAAAAAAEAAYAAgAAAAAAAAADAAYAAgAAAAAAAAACAAYAAgAAAAAAAAABAAYAAgAAAAAAAAAAAAYAAgAAAAAAAAD//wYAAgAAAAAAAAD+/wYAAgAAAAAAAAD+/wUAAgAAAAAAAAD+/wQAAgAAAAAAAAD+/wMAAgAAAAAAAAD+/wIAAgAAAAAAAAD+/wEAAgAAAAAAAAD+/wAAAgAAAAAAAAD+////AgAAAAAAAAD+//7/AgAAAAAAAAD+//3/AgAAAAAAAAD///3/AgAAAAAAAAAAAP3/AgAAAAAAAAABAP3/AgAAAAAAAAACAP3/AgAAAAAAAAADAP3/AgAAAAAAAAAEAP3/AgAAAAAAAAAFAP3/AgAAAAAAAAAGAP3/AgAAAAAAAAAHAP3/AgAAAAAAAAAIAP3/AgAAAAAAAAAJAP3/AgAAAAAAAAAJAP7/AgAAAAAAAAAJAP//AgAAAAAAAAAJAAAAAgAAAAAAAAAJAAEAAgAAAAAAAAAJAAIAAgAAAAAAAAAJAAMAAgAAAAAAAAAJAAQAAgAAAAAAAAAJAAUAAgAAAAAAAAAJAAYAAgAAAAAAAAAAAAUAAgAAAAAAAAABAAUAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAgAAAAAAAAACAAMAAgAAAAAAAAADAAMAAgAAAAAAAAADAAIAAgAAAAAAAAAEAAIAAgAAAAAAAAAEAAEAAgAAAAAAAAAFAAEAAgAAAAAAAAAGAAAAAgAAAAAAAAAFAAAAAgAAAAAAAAAGAP//AgAAAAAAAAAHAP//AgAAAAAAAAAHAP7/AgAAAAAAAAAIAP7/AgAAAAAAAAAKAP7/AgAAAAAAAAACAAUACwAAAAEAAAA=")
+
+[node name="Camera2D" parent="." index="3" unique_id=1721326176]
+position = Vector2(564, 252)
+zoom = Vector2(0.57, 0.57)
+
+[node name="Portal" parent="." index="4" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
+position = Vector2(383, -123)
+linkedPortal = NodePath("../Portal2")
+
+[node name="Portal2" parent="." index="5" unique_id=1273175285 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
+position = Vector2(639, -258)
+linkedPortal = NodePath("../Portal3")
+
+[node name="Portal3" parent="." index="6" unique_id=1096374916 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
+position = Vector2(-128, 637)
+linkedPortal = NodePath("../Portal")
+
+[node name="Portal4" parent="." index="7" unique_id=1650987650 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
+position = Vector2(260, 636)
+linkedPortal = NodePath("../Portal5")
+
+[node name="Portal5" parent="." index="8" unique_id=1251979430 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
+position = Vector2(1023, 386)
+linkedPortal = NodePath("../Portal6")
+
+[node name="Portal6" parent="." index="9" unique_id=2030055071 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
+position = Vector2(774, 134)
+linkedPortal = NodePath("../Portal4")
