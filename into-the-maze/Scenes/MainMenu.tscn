@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dkehbnhm588cy"]
+
+[ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_tt5f1"]
+
+[sub_resource type="Theme" id="Theme_1htm7"]
+
+[node name="Ebi" type="Control" unique_id=1431110107]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.003879618
+theme = SubResource("Theme_1htm7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=58732200]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=1410718139]
+layout_mode = 2
+theme = ExtResource("1_tt5f1")
+text = "Me when my robots are stuck
+in a basement that has colapsed"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1805315087]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+text = "PLAY"
