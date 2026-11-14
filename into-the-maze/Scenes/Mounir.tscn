@@ -32,6 +32,8 @@ texture = ExtResource("2_8b3hd")
 position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_8b3hd")
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D" unique_id=1166145432]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1133416292]
 position = Vector2(-64, -64)
 
