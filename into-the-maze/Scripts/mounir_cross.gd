@@ -14,6 +14,7 @@ var inputs = {"ui_right": Vector2.RIGHT,
 
 var animation_speed = 6.7
 var moving = false
+var warping = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -53,3 +54,8 @@ func move(dir):
 # FUCK MY LIFE, 2 LIGNES !!!!!!!!!!!!!!!!!
 func _on_body_entered(body: Node2D) -> void:
 	queue_free()
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if area is Portal:
+		queue_free()
