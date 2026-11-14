@@ -11,6 +11,9 @@ var inputs = {"ui_right": Vector2.RIGHT,
 			"ui_down": Vector2.DOWN}
 
 
+signal death
+signal objective
+signal objective_left
 
 var animation_speed = 6.7
 var moving = false
@@ -42,4 +45,12 @@ func move(dir):
 
 func _on_body_entered(body: Node2D) -> void:
 	if get_collision_mask_value(2):
-		print("death")
+		#print("death")
+		death.emit()
+	elif get_collision_mask_value(3):
+		objective.emit()
+
+
+func _on_body_exited(body: Node2D) -> void:
+	if not get_collision_mask_value(3):
+		objective_left.emit()
