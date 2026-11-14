@@ -1,6 +1,7 @@
 extends Node2D
 
 var cross = preload("res://Scenes/cross.tscn")
+var instance
 
 var tile_size = 128
 var objective:int = 0
@@ -13,11 +14,17 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if (Input.is_action_just_pressed("ui_accept")):
 		spawn_cross(get_global_mouse_position().snapped(Vector2.ONE * tile_size))
-
+	
 func spawn_cross(pos):
-	var instance = cross.instantiate()
-	instance.position = pos
-	add_child(instance)
+	if (!instance):
+		instance = cross.instantiate()
+		instance.position = pos
+		add_child(instance)
+	else:
+		instance.queue_free()
+		instance = cross.instantiate()
+		instance.position = pos
+		add_child(instance)
 
 
 func _on_death():

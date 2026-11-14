@@ -17,7 +17,23 @@ var moving = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	position = position.snapped(Vector2.ONE * tile_size)
+	ray.target_position = position
+	ray.force_raycast_update()
+	print("Test")
+	print(position)
+	if ray.is_colliding():
+		print("AAAAAAAAAAAAAAAAAAAAAAA")
+		queue_free()
+	fuck_my_life()
 	#position += Vector2.ONE * tile_size
+
+
+
+func fuck_my_life() :
+	ray.target_position = Vector2.ZERO * tile_size
+	ray.force_raycast_update()
+	if ray.is_colliding():
+		queue_free()
 
 func _unhandled_input(event):
 	if moving:
@@ -27,6 +43,7 @@ func _unhandled_input(event):
 			move(dir)
 
 func move(dir):
+	#fuck_my_life()
 	ray.target_position = inputs[dir] * tile_size
 	ray.force_raycast_update()
 	if !ray.is_colliding():
