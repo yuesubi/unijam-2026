@@ -9,8 +9,15 @@ class LevelEntry:
 		self.scene_path = scene_path
 
 var levels: Array[LevelEntry] = [
-	LevelEntry.new("Kaily", "res://Scenes/Kaily.tscn"),
-	LevelEntry.new("Mounir", "res://Scenes/Mounir.tscn"),
+	LevelEntry.new("Tuto 1", "res://Scenes/Levels/tuto1.tscn"),
+	LevelEntry.new("Tuto 2", "res://Scenes/Levels/tuto2.tscn"),
+	LevelEntry.new("Tuto 3", "res://Scenes/Levels/tuto3.tscn"),
+	LevelEntry.new("Tuto 4", "res://Scenes/Levels/tuto4.tscn"),
+	LevelEntry.new("Level 1", "res://Scenes/Levels/level1.tscn"),
+	LevelEntry.new("Level 2", "res://Scenes/Levels/level1.tscn"),
+	LevelEntry.new("Level 3", "res://Scenes/Levels/level1.tscn"),
+	LevelEntry.new("Niveau n1", "res://Scenes/Levels/niveau n1.tscn"),
+	LevelEntry.new("Niveau n2", "res://Scenes/Levels/niveau n2.tscn"),
 ]
 
 @onready var level_container: HFlowContainer = %LevelContainer
