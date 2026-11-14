@@ -12,13 +12,11 @@ func _on_death():
 	SfxPlayer.play(SfxPlayer.Death) 
 	
 	# Code 
-	print("death")
 	get_tree().call_deferred("reload_current_scene")
 	
 
 func _on_objective() -> void:
 	objective+=1
-	print(objective)
 	if objective==2:
 		print("victory")
 		

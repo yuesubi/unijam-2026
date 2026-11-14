@@ -33,10 +33,10 @@ position = Vector2(509, 379)
 linked_walls = [NodePath("../StaticBody2D")]
 linked_buttons = [NodePath("../button")]
 
-[node name="Portal" parent="." index="7" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
-position = Vector2(257, 377)
-linkedPortal = NodePath("../Portal2")
-
-[node name="Portal2" parent="." index="8" unique_id=666642668 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
+[node name="Portal2" parent="." index="7" unique_id=666642668 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
 position = Vector2(255, -12)
 linkedPortal = NodePath("../Portal")
+
+[node name="Portal" parent="." index="8" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
+position = Vector2(255, 384)
+linkedPortal = NodePath("../Portal2")
