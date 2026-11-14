@@ -2,6 +2,7 @@ extends Area2D
 
 @onready var ray = $RayCast2D
 @export var tile_map: TileMap
+@onready var sprite_2d: Sprite2D = $Sprite2D
 
 
 var tile_size = 128
@@ -16,12 +17,15 @@ var moving = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	sprite_2d.hide()
 	position = position.snapped(Vector2.ONE * tile_size)
 	ray.target_position = position
 	ray.force_raycast_update()
 	print(position)
 	if ray.is_colliding():
 		queue_free()
+	await get_tree().create_timer(0.03).timeout
+	sprite_2d.visible = true
 	#position += Vector2.ONE * (tile_size/2)
 
 
