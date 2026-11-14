@@ -23,3 +23,6 @@ func _on_area_entered(area: Area2D) -> void:
 	press()
 	for button in linked_buttons:
 		button.press()
+	
+	# SFX
+	SfxPlayer.play(SfxPlayer.MyButton)

@@ -58,6 +58,14 @@ func move(dir):
 		await tween.finished
 		moving = false
 		movement_ended.emit()
+		
+		# SFX player is moving for shure 
+		SfxPlayer.play(SfxPlayer.Step)
+	else :
+		# SFX player might not move 
+		SfxPlayer.play(SfxPlayer.Wall)
+		
+	
 
 
 func _on_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
@@ -92,3 +100,6 @@ func _on_area_entered(area: Area2D) -> void:
 			warping = true
 			var next_pos = area.linkedPortal.position
 			position = next_pos.snapped(Vector2.ONE * tile_size)
+			
+			# SFX 
+			SfxPlayer.play(SfxPlayer.Warp)
