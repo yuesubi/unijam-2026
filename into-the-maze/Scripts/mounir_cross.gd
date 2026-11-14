@@ -24,16 +24,8 @@ func _ready():
 	if ray.is_colliding():
 		print("AAAAAAAAAAAAAAAAAAAAAAA")
 		queue_free()
-	fuck_my_life()
 	#position += Vector2.ONE * tile_size
 
-
-
-func fuck_my_life() :
-	ray.target_position = Vector2.ZERO * tile_size
-	ray.force_raycast_update()
-	if ray.is_colliding():
-		queue_free()
 
 func _unhandled_input(event):
 	if moving:
@@ -54,3 +46,8 @@ func move(dir):
 		moving = true
 		await tween.finished
 		moving = false
+
+# 2 LIGNES !!!!!
+# FUCK MY LIFE, 2 LIGNES !!!!!!!!!!!!!!!!!
+func _on_body_entered(body: Node2D) -> void:
+	queue_free()
