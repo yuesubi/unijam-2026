@@ -27,7 +27,7 @@ physics_layer_1/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_s40qi")
 sources/2 = SubResource("TileSetAtlasSource_hx8um")
 
-[node name="Arthur" type="Node2D" unique_id=402574150]
+[node name="level_base" type="Node2D" unique_id=402574150]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1499959281]
 collision_layer = 3
