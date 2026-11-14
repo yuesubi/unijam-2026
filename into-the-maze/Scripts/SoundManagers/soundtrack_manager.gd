@@ -13,6 +13,11 @@ var lvl_id_list: Array[int]
 
 var current_lvl = -1
 
+
+## Start the main game soundtrack.
+## 
+## lvl is the level you want to start.
+## It start at 0 and end at 4.
 func play_main_game(lvl: int) -> void :
 	lvl_id_list = []
 	
@@ -33,7 +38,9 @@ func play_main_game(lvl: int) -> void :
 
 	current_lvl = lvl
 
-
+## Switch the current lvl with the new_lvl 
+##
+## 
 func switch_lvl(new_lvl: int) -> void :
 	audioStream.set_stream_volume(lvl_id_list[current_lvl], linear_to_db(0))
 	audioStream.set_stream_volume(lvl_id_list[new_lvl], linear_to_db(1))
