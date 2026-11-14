@@ -90,8 +90,8 @@ script = ExtResource("1_n5e7m")
 
 [node name="Player" type="Area2D" parent="." unique_id=1499959281]
 position = Vector2(4, 5)
-collision_layer = 3
-collision_mask = 7
+collision_layer = 15
+collision_mask = 255
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=170584220]
@@ -109,7 +109,7 @@ shape = SubResource("RectangleShape2D_8b3hd")
 [node name="invis_player" type="Area2D" parent="." unique_id=1802008750]
 position = Vector2(897, 124)
 collision_layer = 3
-collision_mask = 7
+collision_mask = 15
 script = ExtResource("1_c4c4a")
 
 [node name="Sprite2D" type="Sprite2D" parent="invis_player" unique_id=1184983573]
