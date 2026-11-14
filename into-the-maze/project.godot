@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://caq1ly1alt6xk"
 [autoload]
 
 SfxPlayer="*uid://cxhou30amr256"
+SoundtrackManager="*uid://d38dcshgcpq11"
 
 [display]
 
