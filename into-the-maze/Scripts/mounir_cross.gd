@@ -19,12 +19,10 @@ func _ready():
 	position = position.snapped(Vector2.ONE * tile_size)
 	ray.target_position = position
 	ray.force_raycast_update()
-	print("Test")
 	print(position)
 	if ray.is_colliding():
-		print("AAAAAAAAAAAAAAAAAAAAAAA")
 		queue_free()
-	#position += Vector2.ONE * tile_size
+	#position += Vector2.ONE * (tile_size/2)
 
 
 func _unhandled_input(event):
