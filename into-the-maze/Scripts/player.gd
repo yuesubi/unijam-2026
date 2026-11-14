@@ -95,6 +95,10 @@ func _on_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, l
 func _on_area_entered(area: Area2D) -> void:
 	if area is Portal:
 		if warping:
+			if area.get_collision_mask_value(5):
+				sprite.show()
+			else:
+				sprite.hide()
 			warping = false
 		else:
 			warping = true

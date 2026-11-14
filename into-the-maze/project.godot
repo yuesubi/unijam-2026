@@ -64,7 +64,8 @@ left_click={
 2d_physics/layer_2="death"
 2d_physics/layer_3="goal"
 2d_physics/layer_4="button"
-2d_physics/layer_5="portal"
+2d_physics/layer_5="portal_real"
+2d_physics/layer_6="portal_radar"
 
 [physics]
 
