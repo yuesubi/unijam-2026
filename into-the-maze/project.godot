@@ -26,7 +26,9 @@ folder_colors={
 "res://Arthur/": "gray",
 "res://Assets/": "green",
 "res://Scenes/": "yellow",
-"res://Scripts/": "red"
+"res://Scripts/": "red",
+"res://Sounds/": "teal",
+"res://Sprites/": "blue"
 }
 
 [layer_names]
