@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://di73bxvgek6fo"]
+
+[ext_resource type="Script" uid="uid://boetr3xabg5op" path="res://Scenes/player.gd" id="1_rqatx"]
+[ext_resource type="Texture2D" uid="uid://crl62p78pu4c8" path="res://icon.svg" id="2_8b3hd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
+size = Vector2(117, 121)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s40qi"]
+texture = ExtResource("2_8b3hd")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSet" id="TileSet_8b3hd"]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_s40qi")
+
+[node name="Mounir" type="Node2D" unique_id=402574150]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1499959281]
+script = ExtResource("1_rqatx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=170584220]
+self_modulate = Color(1, 0.7975, 0.19, 1)
+texture = ExtResource("2_8b3hd")
+
+[node name="RayCast2D" type="RayCast2D" parent="Area2D" unique_id=533463902]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=868428351]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_8b3hd")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1133416292]
+position = Vector2(-64, -64)
+
+[node name="TileMap" type="TileMap" parent="StaticBody2D" unique_id=847008498]
+tile_set = SubResource("TileSet_8b3hd")
+format = 2
+layer_0/tile_data = PackedInt32Array(262149, 0, 0, 262148, 0, 0, 262147, 0, 0, 262145, 0, 0, 196609, 0, 0, 131073, 0, 0, 65537, 0, 0, 131079, 0, 0)
