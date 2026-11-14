@@ -9,7 +9,7 @@ size = Vector2(123, 124)
 [node name="Cross" type="Node2D" unique_id=1534349165]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1403637819]
-collision_mask = 17
+collision_mask = 49
 script = ExtResource("1_angqo")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1395475833]

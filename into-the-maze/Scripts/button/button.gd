@@ -16,7 +16,6 @@ func press():
 	
 
 func _on_area_entered(area: Area2D) -> void:
-	print("pressed")
 	for wall in linked_walls:
 		wall.hide()
 		wall.set_collision_layer_value(1,false)
