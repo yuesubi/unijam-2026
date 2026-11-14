@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ckaaf7hrls0dj"
-path="res://.godot/imported/batmfo__.ttf-e9ac01d16d5830492f30afb372eec311.fontdata"
+uid="uid://d2arbwc23ldm5"
+path="res://.godot/imported/batmfa__.ttf-0332493e0784f303516b7a8eb75ebb15.fontdata"
 
 [deps]
 
-source_file="res://Ressources/Ui/batmfo__.ttf"
-dest_files=["res://.godot/imported/batmfo__.ttf-e9ac01d16d5830492f30afb372eec311.fontdata"]
+source_file="res://Ui/batmfa__.ttf"
+dest_files=["res://.godot/imported/batmfa__.ttf-0332493e0784f303516b7a8eb75ebb15.fontdata"]
 
 [params]
 

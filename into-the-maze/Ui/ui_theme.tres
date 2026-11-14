@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://bhf2ge2oemdv2"]
 
-[ext_resource type="FontFile" uid="uid://d2arbwc23ldm5" path="res://Ressources/Ui/batmfa__.ttf" id="1_falnl"]
+[ext_resource type="FontFile" uid="uid://d2arbwc23ldm5" path="res://Ui/batmfa__.ttf" id="1_falnl"]
 
 [resource]
 default_font = ExtResource("1_falnl")
