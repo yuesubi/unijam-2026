@@ -93,21 +93,27 @@ func _on_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, l
 		objective_left.emit()
 
 
-func _on_area_entered(area: Area2D) -> void:
+'''func _on_area_entered(area: Area2D) -> void:
+	print(area)
 	if area is Portal:
 		if warping:
+			print("not warping")
 			if area.get_collision_layer_value(5):
 				sprite.show()
 			else:
 				sprite.hide()
 			movement_ended.emit()
 		else:
+			print("warping")
 			warping = true
 			var next_pos = area.linkedPortal.position
+			print(next_pos)
 			position = next_pos.snapped(Vector2.ONE * tile_size)
-			
 			# SFX 
 			if sprite.visible : SfxPlayer.play(SfxPlayer.Warp)
 			
 			await movement_ended
-			warping = false
+			await get_tree().create_timer(0.1).timeout
+			print("done")
+			warping = false'''
+#384 ; -128

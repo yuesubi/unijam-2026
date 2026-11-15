@@ -9,7 +9,6 @@ size = Vector2(101, 96)
 [node name="Portal" type="Area2D" unique_id=1833809616]
 z_index = -1
 collision_layer = 16
-collision_mask = 0
 script = ExtResource("1_lxftb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=299780092]
@@ -19,3 +18,5 @@ texture = ExtResource("2_lxftb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1999173525]
 position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_k41lo")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
