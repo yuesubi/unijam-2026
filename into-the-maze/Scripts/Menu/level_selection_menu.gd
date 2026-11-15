@@ -36,6 +36,9 @@ func _ready() -> void:
 		button.text = level.name
 		button.pressed.connect(
 			func() -> void:
+				# SFX
+				SoundtrackManager.stop_main_menu()
+				
 				GameData.scene_to_load = level.scene_path
 				get_tree().change_scene_to_file("res://Scenes/SceneContainers/level_container.tscn")
 		)
