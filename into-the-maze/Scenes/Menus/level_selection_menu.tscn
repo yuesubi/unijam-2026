@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c6563qsjsp71j"]
 
 [ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_c0l0c"]
-[ext_resource type="Script" uid="uid://dl6yws3bswjbj" path="res://Scripts/level_selection_menu.gd" id="3_sb4vk"]
+[ext_resource type="Script" uid="uid://dl6yws3bswjbj" path="res://Scripts/Menu/level_selection_menu.gd" id="3_sb4vk"]
 
 [node name="LevelSelectionMenu" type="Control" unique_id=2126802653]
 layout_mode = 3

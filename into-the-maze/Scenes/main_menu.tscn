@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xglduaafueqe"]
 
-[ext_resource type="Script" uid="uid://e8jurwjl0y65" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
+[ext_resource type="Script" uid="uid://e8jurwjl0y65" path="res://Scripts/Menu/main_menu.gd" id="1_1ehe0"]
 [ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_tt5f1"]
 [ext_resource type="PackedScene" uid="uid://bsbcv6n746omc" path="res://Scenes/volume_panel.tscn" id="2_48xlc"]
 

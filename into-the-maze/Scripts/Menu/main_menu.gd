@@ -5,6 +5,7 @@ extends "res://Scripts/contenerized_scene.gd"
 func _ready() -> void:
 	SfxPlayer.audioStream = %SFXAudioPlayer.get_stream_playback()
 	SoundtrackManager.audioStream = %SoundtrackAudioPlayer.get_stream_playback()
+	SoundtrackManager.play_main_menu()
 
 
 
@@ -15,6 +16,7 @@ func _ready() -> void:
 
 func _on_play_button_pressed() -> void:
 	switching_to.emit(preload("res://Scenes/Menus/level_selection_menu.tscn"))
+	SoundtrackManager.stop_main_menu()
 	# get_tree().change_scene_to_file("res://Scenes/level_selection.tscn")
 
 

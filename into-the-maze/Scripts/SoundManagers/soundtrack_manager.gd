@@ -2,6 +2,7 @@ extends Node
 
 var audioStream:AudioStreamPlaybackPolyphonic 
 
+var menu = preload("res://Sounds/Soundtrack/Mewhen.wav")
 
 var lvl1 = preload("res://Sounds/Soundtrack/lvl1.wav")
 var lvl2 = preload("res://Sounds/Soundtrack/lvl2.wav")
@@ -9,6 +10,7 @@ var lvl3 = preload("res://Sounds/Soundtrack/lvl3.wav")
 var lvl4 = preload("res://Sounds/Soundtrack/lvl4.wav")
 var lvl5 = preload("res://Sounds/Soundtrack/lvl5.wav")
 
+var menu_id: int = -1
 var lvl_id_list: Array[int]
 
 var current_lvl = -1
@@ -48,10 +50,18 @@ func switch_lvl(new_lvl: int) -> void :
 
 
 func play_main_menu() -> void : 
-	pass
+	menu_id = audioStream.play_stream(menu)
 	
-func stop() -> void:
-	audioStream.stop()
+func stop_main_menu() -> void:
+	audioStream.stop_stream(menu_id)
+	menu_id = -1
+
+func stop_main_game() -> void:
+	for lvl_id in lvl_id_list :
+		audioStream.stop_stream(lvl_id)
+		
+	lvl_id_list.clear()
+	
 
 func pause() -> void:
 	audioStream.stream_paused = true
