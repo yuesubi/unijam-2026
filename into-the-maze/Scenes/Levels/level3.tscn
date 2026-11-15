@@ -33,3 +33,15 @@ z_index = -50
 position = Vector2(1111, 204.99995)
 scale = Vector2(6.0429697, 9.390625)
 texture = ExtResource("2_jwpnw")
+
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=605897269]
+position = Vector2(-1607.9999, 127.99999)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=658004868]
+position = Vector2(-1444, 111)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=683474113]
+position = Vector2(-1070, -13)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=1447633655]
+position = Vector2(-1274, 154)

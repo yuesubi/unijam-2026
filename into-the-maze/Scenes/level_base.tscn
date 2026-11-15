@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b1nsp0jjhpult" path="res://Assets/void.png" id="6_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://bfqg6erlao4g6" path="res://Assets/back/Bloc_ Fond_Radar.png" id="7_2ssho"]
 [ext_resource type="Texture2D" uid="uid://dbxprnpuqfkmo" path="res://Assets/back/Fond_Reel.png" id="8_qn2pf"]
+[ext_resource type="Texture2D" uid="uid://eac217787lqn" path="res://Assets/back/Television.png" id="9_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://ce3y4qx2vasod" path="res://Assets/back/Ellipse 168.png" id="9_xnoyx"]
 [ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="10_3bmkt"]
 
@@ -119,6 +120,8 @@ scale = Vector2(0.994, 1)
 texture = ExtResource("8_qn2pf")
 
 [node name="blueBack" type="Sprite2D" parent="level_base2" unique_id=658004868]
+z_index = -100
+texture = ExtResource("9_3bmkt")
 
 [node name="tvbutton" type="Sprite2D" parent="level_base2" unique_id=683474113]
 texture = ExtResource("9_xnoyx")

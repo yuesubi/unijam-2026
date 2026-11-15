@@ -66,6 +66,18 @@ position = Vector2(1299, -180)
 scale = Vector2(2.6981204, 1.1718749)
 texture = ExtResource("2_vm37b")
 
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="12" unique_id=605897269]
+position = Vector2(-1529.9999, 344.99997)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="13" unique_id=658004868]
+position = Vector2(-1191, 235)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="14" unique_id=683474113]
+position = Vector2(-694, 72)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="15" unique_id=1447633655]
+position = Vector2(-1018, 72)
+
 [node name="Portal" parent="." index="1" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
 position = Vector2(383, -123)
 linkedPortal = NodePath("../Portal2")
