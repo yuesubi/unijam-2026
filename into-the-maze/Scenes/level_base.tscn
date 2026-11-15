@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://eac217787lqn" path="res://Assets/back/Television.png" id="9_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://ce3y4qx2vasod" path="res://Assets/back/Ellipse 168.png" id="9_xnoyx"]
 [ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="10_3bmkt"]
+[ext_resource type="PackedScene" uid="uid://cwvbwndr84e8n" path="res://Scenes/Panels/success_menu.tscn" id="12_3bmkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
@@ -130,6 +131,15 @@ texture = ExtResource("9_xnoyx")
 z_index = -100
 texture = ExtResource("10_3bmkt")
 
+[node name="SuccessMenu" parent="." unique_id=1104165292 instance=ExtResource("12_3bmkt")]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
 [connection signal="death" from="level_base2" to="." method="reload_scene"]
 [connection signal="area_entered" from="level_base2/Player" to="level_base2/Player" method="_on_area_entered"]
 [connection signal="body_shape_entered" from="level_base2/Player" to="level_base2/Player" method="_on_body_shape_entered"]
@@ -145,3 +155,4 @@ texture = ExtResource("10_3bmkt")
 [connection signal="movement_ended" from="level_base2/invis_player" to="level_base2/invis_player" method="_on_movement_ended"]
 [connection signal="objective" from="level_base2/invis_player" to="level_base2" method="_on_objective"]
 [connection signal="objective_left" from="level_base2/invis_player" to="level_base2" method="_on_objective_left"]
+[connection signal="go_to_selector" from="SuccessMenu" to="level_base2" method="_on_success_menu_go_to_selector"]
