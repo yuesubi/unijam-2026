@@ -111,7 +111,7 @@ scale = Vector2(2.366733, 1)
 texture = ExtResource("4_ufbuf")
 
 [node name="Portal" parent="." index="1" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
-position = Vector2(383, -123)
+position = Vector2(-119, 653)
 linkedPortal = NodePath("../Portal2")
 
 [node name="Portal2" parent="." index="2" unique_id=1273175285 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
@@ -119,15 +119,15 @@ position = Vector2(639, -258)
 linkedPortal = NodePath("../Portal3")
 
 [node name="Portal3" parent="." index="3" unique_id=1096374916 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
-position = Vector2(-128, 637)
+position = Vector2(378, -121)
 linkedPortal = NodePath("../Portal")
 
 [node name="Portal4" parent="." index="4" unique_id=1650987650 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
-position = Vector2(260, 636)
+position = Vector2(1028, 384)
 linkedPortal = NodePath("../Portal5")
 
 [node name="Portal5" parent="." index="5" unique_id=1251979430 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
-position = Vector2(1023, 386)
+position = Vector2(253, 642)
 linkedPortal = NodePath("../Portal6")
 
 [node name="Portal6" parent="." index="6" unique_id=2030055071 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_vm37b")]
