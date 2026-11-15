@@ -57,5 +57,5 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _on_area_entered(area: Area2D) -> void:
-	if area is Portal:
+	if moving and area is Portal:
 		queue_free()
