@@ -24,7 +24,7 @@ func _on_objective() -> void:
 		print("victory")
 		
 		# SFX
-		SfxPlayer.play(SfxPlayer.Victory)
+		SfxPlayer.play(SfxPlayer.Finish)
 
 func _on_objective_left() -> void:
 	objective-=1
