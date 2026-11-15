@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_aw7et"]
 [ext_resource type="Script" uid="uid://denqj84502rhx" path="res://Scripts/specific_scripts/tuto2.gd" id="2_pe867"]
 [ext_resource type="Texture2D" uid="uid://cf2lsp2od0ra7" path="res://Assets/spider/Spider_Right.png" id="3_5tv75"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="4_t41lh"]
 
 [node name="level_base2" unique_id=402574150 instance=ExtResource("1_aw7et")]
 
@@ -29,13 +30,36 @@ position = Vector2(729, 119)
 scale = Vector2(13.4375, 2.859375)
 
 [node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
-position = Vector2(-1741.9999, -225.99998)
+position = Vector2(689.7498, 638.50006)
+scale = Vector2(1.1390002, 0.30819917)
 
 [node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
-position = Vector2(-1262, -230)
+position = Vector2(745.5, 71)
+scale = Vector2(2.199, 1)
 
 [node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
-position = Vector2(-760, -71)
+position = Vector2(-864, -54)
 
 [node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
-position = Vector2(-1621, -84)
+position = Vector2(735, 893)
+scale = Vector2(3.153125, 1)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=1603446420]
+z_index = -100
+position = Vector2(701.99994, 442)
+scale = Vector2(3.153125, 1)
+texture = ExtResource("4_t41lh")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=1635987495]
+z_index = -100
+position = Vector2(-200, 868)
+rotation = 1.5707964
+scale = Vector2(1.5474946, 1)
+texture = ExtResource("4_t41lh")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1065686372]
+z_index = -100
+position = Vector2(1604.709, 872)
+rotation = 1.5707964
+scale = Vector2(1.5474946, 1.2610779)
+texture = ExtResource("4_t41lh")
