@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dfukuasqwqpyf" path="res://Assets/TileMap.png" id="4_3ne40"]
 [ext_resource type="Texture2D" uid="uid://b1nsp0jjhpult" path="res://Assets/void.png" id="6_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://bfqg6erlao4g6" path="res://Assets/back/Bloc_ Fond_Radar.png" id="7_2ssho"]
+[ext_resource type="Texture2D" uid="uid://dbxprnpuqfkmo" path="res://Assets/back/Fond_Reel.png" id="8_qn2pf"]
+[ext_resource type="Texture2D" uid="uid://ce3y4qx2vasod" path="res://Assets/back/Ellipse 168.png" id="9_xnoyx"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="10_3bmkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
@@ -108,6 +111,21 @@ zoom = Vector2(0.605, 0.605)
 [node name="Sprite2D" type="Sprite2D" parent="level_base2" unique_id=1877904564]
 z_index = -50
 texture = ExtResource("7_2ssho")
+
+[node name="fondNormal" type="Sprite2D" parent="level_base2" unique_id=605897269]
+z_index = -50
+position = Vector2(-4.5, 0)
+scale = Vector2(0.994, 1)
+texture = ExtResource("8_qn2pf")
+
+[node name="blueBack" type="Sprite2D" parent="level_base2" unique_id=658004868]
+
+[node name="tvbutton" type="Sprite2D" parent="level_base2" unique_id=683474113]
+texture = ExtResource("9_xnoyx")
+
+[node name="rubalise" type="Sprite2D" parent="level_base2" unique_id=1447633655]
+z_index = -100
+texture = ExtResource("10_3bmkt")
 
 [connection signal="death" from="level_base2" to="." method="reload_scene"]
 [connection signal="area_entered" from="level_base2/Player" to="level_base2/Player" method="_on_area_entered"]
