@@ -133,7 +133,6 @@ z_index = -100
 texture = ExtResource("10_3bmkt")
 
 [node name="Control" type="Control" parent="." unique_id=1167568828]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -144,6 +143,7 @@ theme = ExtResource("12_16v77")
 
 [node name="SuccessMenu" parent="Control" unique_id=1104165292 instance=ExtResource("12_3bmkt")]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
