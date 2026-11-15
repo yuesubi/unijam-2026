@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://bs8x67yy1mmhp" path="res://Scripts/level_base.gd" id="1_n5e7m"]
 [ext_resource type="Texture2D" uid="uid://cf2lsp2od0ra7" path="res://Assets/spider/Spider_Right.png" id="3_3ne40"]
 [ext_resource type="Texture2D" uid="uid://dfukuasqwqpyf" path="res://Assets/TileMap.png" id="4_3ne40"]
+[ext_resource type="Texture2D" uid="uid://yq3oh2rickvu" path="res://Assets/Version_2_design/Acid_reel.png" id="5_77ilv"]
+[ext_resource type="Texture2D" uid="uid://djjeayeokjabm" path="res://Assets/Version_2_design/Bloc_Victoire_Radar.png" id="6_0juvt"]
 [ext_resource type="Texture2D" uid="uid://b1nsp0jjhpult" path="res://Assets/void.png" id="6_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://bfqg6erlao4g6" path="res://Assets/back/Bloc_ Fond_Radar.png" id="7_2ssho"]
 [ext_resource type="Texture2D" uid="uid://dbxprnpuqfkmo" path="res://Assets/back/Fond_Reel.png" id="8_qn2pf"]
@@ -16,6 +18,20 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0juvt"]
+texture = ExtResource("5_77ilv")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_306k7"]
+texture = ExtResource("6_0juvt")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+0:0/0/custom_data_0 = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3kpl"]
 texture = ExtResource("4_3ne40")
@@ -56,9 +72,11 @@ custom_data_layer_0/name = "layer"
 custom_data_layer_0/type = 2
 sources/2 = SubResource("TileSetAtlasSource_2ssho")
 sources/11 = SubResource("TileSetAtlasSource_e3kpl")
+sources/0 = SubResource("TileSetAtlasSource_0juvt")
+sources/1 = SubResource("TileSetAtlasSource_306k7")
 tile_proxies/coords_level = [[3, Vector2i(0, 0)], [11, Vector2i(0, 0)], [4, Vector2i(0, 0)], [11, Vector2i(1, 0)], [5, Vector2i(0, 0)], [11, Vector2i(2, 0)], [6, Vector2i(0, 0)], [11, Vector2i(3, 0)], [7, Vector2i(0, 0)], [11, Vector2i(0, 1)], [8, Vector2i(0, 0)], [11, Vector2i(1, 1)], [9, Vector2i(0, 0)], [11, Vector2i(2, 1)], [10, Vector2i(0, 0)], [11, Vector2i(3, 1)]]
 
-[node name="LevelBase" type="Node" unique_id=1866254782]
+[node name="LevelBase2" type="Node" unique_id=1866254782]
 script = ExtResource("1_e3kpl")
 
 [node name="level_base2" type="Node2D" parent="." unique_id=402574150]
