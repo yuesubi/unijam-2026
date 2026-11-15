@@ -104,6 +104,7 @@ physics_quadrant_size = 1
 position = Vector2(587, 327)
 zoom = Vector2(0.605, 0.605)
 
+[connection signal="death" from="level_base2" to="." method="reload_scene"]
 [connection signal="area_entered" from="level_base2/Player" to="level_base2/Player" method="_on_area_entered"]
 [connection signal="body_shape_entered" from="level_base2/Player" to="level_base2/Player" method="_on_body_shape_entered"]
 [connection signal="body_shape_exited" from="level_base2/Player" to="level_base2/Player" method="_on_body_shape_exited"]

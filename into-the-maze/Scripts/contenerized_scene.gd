@@ -1,12 +1,10 @@
 extends Node
 
 signal switching_to(scene: PackedScene)
+signal reloading_scene()
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func switch_to(scene: PackedScene):
+	switching_to.emit(scene)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func reload_scene():
+	reloading_scene.emit()
