@@ -36,7 +36,7 @@ func _on_objective_left() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("reload"):
-		get_tree().call_deferred("reload_current_scene")
+		self.call_deferred("emit_death")
 
 #Mounir Shenanigans (la croix)
 
