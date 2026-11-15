@@ -19,3 +19,7 @@ tile_map_data = PackedByteArray("AAAIAAEACwACAAEAAAAIAAMAAgAAAAAAAAABAAIACwAAAAE
 
 [node name="Camera2D" parent="level_base2" index="3" unique_id=1721326176]
 position = Vector2(605, -67)
+
+[node name="Sprite2D" parent="level_base2" index="4" unique_id=1877904564]
+position = Vector2(611, 178)
+scale = Vector2(13.734375, 3.828125)

@@ -8,152 +8,156 @@
 
 [node name="level_base" unique_id=402574150 instance=ExtResource("1_l8cds")]
 
-[node name="Player" parent="." index="0" unique_id=1499959281]
+[node name="Player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="0" unique_id=1499959281]
 position = Vector2(382, 127)
 
-[node name="invis_player" parent="." index="1" unique_id=1802008750]
+[node name="invis_player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="1" unique_id=1802008750]
 position = Vector2(1538, 124)
 
-[node name="TileMap" parent="." index="2" unique_id=1646785559]
+[node name="TileMap" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="2" unique_id=1646785559]
 tile_map_data = PackedByteArray("AAAIAAEAAgAAAAAAAAAIAAMAAgAAAAAAAAABAAIACwAAAAAAAAABAAAACwAAAAAAAAACAAAACwABAAAAAAADAAAACwAAAAAAAAAEAAAACwABAAAAAAAEAAEACwAAAAAAAAAFAAEACwAAAAAAAAAFAAAACwAAAAAAAAADAAEACwAAAAAAAAACAAEACwAAAAAAAAABAAEACwAAAAAAAAACAAIACwABAAAAAAACAAMACwAAAAAAAAABAAMACwAAAAAAAAABAAQACwAAAAAAAAAEAAMACwAAAAAAAAAFAAMACwAAAAAAAAAGAAMACwAAAAAAAAADAAMACwAAAAAAAAAFAAIACwAAAAAAAAAGAAQACwABAAAAAAAGAAAACwABAAAAAAAGAAEACwAAAAAAAAAHAAAAAgAAAAAAAAAIAAAAAgAAAAAAAAAIAAIAAgAAAAAAAAAHAAIAAgAAAAAAAAAHAAMAAgAAAAAAAAAHAAQAAgAAAAAAAAAIAAQAAgAAAAAAAAAJAAAACwABAAEAAAAJAAEACwAAAAEAAAAJAAIACwABAAEAAAAJAAMACwAAAAEAAAAJAAQACwABAAEAAAAAAAEACwAAAAAAAAAAAAIACwABAAAAAAAAAAMACwAAAAAAAAAAAAQACwABAAAAAAACAAQACwABAAAAAAADAAQACwADAAAAAAAEAAQACwABAAAAAAAFAAQACwAAAAAAAAAGAAIACwABAAAAAAADAAIACwAAAAAAAAAEAAIACwABAAAAAAD/////AgAAAAAAAAD//wAAAgAAAAAAAAD//wEAAgAAAAAAAAD//wIAAgAAAAAAAAD//wMAAgAAAAAAAAD//wQAAgAAAAAAAAD//wUAAgAAAAAAAAAAAAUAAgAAAAAAAAABAAUAAgAAAAAAAAACAAUAAgAAAAAAAAADAAUAAgAAAAAAAAAEAAUAAgAAAAAAAAAFAAUAAgAAAAAAAAAGAAUAAgAAAAAAAAAHAAUAAgAAAAAAAAAIAAUAAgAAAAAAAAAJAAUAAgAAAAAAAAAJAP//CwAAAAEAAAAIAP//AgAAAAAAAAAHAP//AgAAAAAAAAAGAP//CwAAAAAAAAAFAP//CwAAAAAAAAAEAP//CwAAAAAAAAADAP//CwAAAAAAAAACAP//CwAAAAAAAAABAP//CwAAAAAAAAAAAP//CwAAAAAAAAAHAAEAAgAAAAAAAAAAAAAACwABAAAAAAAEAP7/CwABAAAAAAACAP7/CwABAAAAAAAGAP7/CwABAAAAAAAAAP7/CwABAAAAAAAFAP7/CwAAAAAAAAADAP7/CwAAAAAAAAABAP7/CwAAAAAAAAAKAAQACwAAAAEAAAALAAQACwABAAEAAAAMAAQACwADAAEAAAANAAQACwABAAEAAAAOAAQACwAAAAEAAAAPAAQACwABAAEAAAAPAAIACwABAAEAAAAPAAAACwABAAEAAAAPAP7/CwABAAEAAAANAP7/CwABAAEAAAANAAAACwABAAEAAAANAAIACwABAAEAAAALAAIACwABAAEAAAALAAAACwABAAEAAAAJAP7/CwABAAEAAAALAP7/CwABAAEAAAAKAAMACwAAAAEAAAAKAAIACwAAAAEAAAAKAAEACwAAAAEAAAAKAAAACwAAAAEAAAAKAP//CwAAAAEAAAAKAP7/CwAAAAEAAAALAP//CwAAAAEAAAAMAP//CwAAAAEAAAANAP//CwAAAAEAAAAOAP//CwAAAAEAAAAPAP//CwAAAAEAAAAOAP7/CwAAAAEAAAAOAAAACwAAAAEAAAAOAAEACwAAAAEAAAAOAAIACwAAAAEAAAANAAMACwAAAAEAAAALAAMACwAAAAEAAAAMAAMACwAAAAEAAAAOAAMACwAAAAEAAAAPAAMACwAAAAEAAAAPAAEACwAAAAEAAAANAAEACwAAAAEAAAAMAAEACwAAAAEAAAALAAEACwAAAAEAAAAMAAIACwAAAAEAAAAMAAAACwAAAAEAAAAMAP7/CwAAAAEAAAAHAP7/AgAAAAAAAAAHAP3/AgAAAAAAAAAGAP3/AgAAAAAAAAAFAP3/AgAAAAAAAAAEAP3/AgAAAAAAAAADAP3/AgAAAAAAAAACAP3/AgAAAAAAAAABAP3/AgAAAAAAAAAAAP3/AgAAAAAAAAD///3/AgAAAAAAAAD///7/AgAAAAAAAAAKAAUAAgAAAAAAAAALAAUAAgAAAAAAAAAMAAUAAgAAAAAAAAANAAUAAgAAAAAAAAAOAAUAAgAAAAAAAAAPAAUAAgAAAAAAAAAQAAUAAgAAAAAAAAAQAAQAAgAAAAAAAAAQAAMAAgAAAAAAAAAQAAIAAgAAAAAAAAAQAAEAAgAAAAAAAAAQAAAAAgAAAAAAAAAQAP//AgAAAAAAAAAQAP7/AgAAAAAAAAAQAP3/AgAAAAAAAAAPAP3/AgAAAAAAAAAOAP3/AgAAAAAAAAANAP3/AgAAAAAAAAAMAP3/AgAAAAAAAAALAP3/AgAAAAAAAAAKAP3/AgAAAAAAAAAJAP3/AgAAAAAAAAAIAP3/AgAAAAAAAAAIAP7/AgAAAAAAAAD///z/AgAAAAAAAAAAAPz/AgAAAAAAAAABAPz/AgAAAAAAAAACAPz/AgAAAAAAAAADAPz/AgAAAAAAAAAEAPz/AgAAAAAAAAAFAPz/AgAAAAAAAAAGAPz/AgAAAAAAAAAHAPz/AgAAAAAAAAAIAPz/AgAAAAAAAAAJAPz/AgAAAAAAAAAKAPz/AgAAAAAAAAALAPz/AgAAAAAAAAAMAPz/AgAAAAAAAAANAPz/AgAAAAAAAAAOAPz/AgAAAAAAAAAPAPz/AgAAAAAAAAAQAPz/AgAAAAAAAAARAPz/AgAAAAAAAAARAP3/AgAAAAAAAAD//wYAAgAAAAAAAAAAAAYAAgAAAAAAAAABAAYAAgAAAAAAAAACAAYAAgAAAAAAAAADAAYAAgAAAAAAAAAEAAYAAgAAAAAAAAAFAAYAAgAAAAAAAAAGAAYAAgAAAAAAAAAHAAYAAgAAAAAAAAAIAAYAAgAAAAAAAAAJAAYAAgAAAAAAAAAKAAYAAgAAAAAAAAALAAYAAgAAAAAAAAAMAAYAAgAAAAAAAAANAAYAAgAAAAAAAAAOAAYAAgAAAAAAAAAPAAYAAgAAAAAAAAAQAAYAAgAAAAAAAAARAAYAAgAAAAAAAAARAAUAAgAAAAAAAAARAAQAAgAAAAAAAAARAAMAAgAAAAAAAAARAAIAAgAAAAAAAAARAAEAAgAAAAAAAAARAAAAAgAAAAAAAAARAP//AgAAAAAAAAARAP7/AgAAAAAAAAA=")
 
-[node name="Camera2D" parent="." index="3" unique_id=1721326176]
+[node name="Camera2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="3" unique_id=1721326176]
 position = Vector2(1067, 195)
 zoom = Vector2(0.5, 0.5)
 
-[node name="b11" parent="." index="4" unique_id=899705201 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1877904564]
+position = Vector2(1615, 208.49997)
+scale = Vector2(8.0625, 8.6796875)
+
+[node name="b11" parent="." index="1" unique_id=899705201 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(124, 510)
 linked_walls = [NodePath("../e11")]
 
-[node name="b1" parent="." index="5" unique_id=1506465703 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="b1" parent="." index="2" unique_id=1506465703 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(767, 129)
 linked_walls = [NodePath("../e1")]
 
-[node name="b16_1" parent="." index="6" unique_id=581783058 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
+[node name="b16_1" parent="." index="3" unique_id=581783058 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
 position = Vector2(634, 507)
 linked_buttons = [NodePath("../b16_2")]
 
-[node name="b15" parent="." index="7" unique_id=624015437 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="b15" parent="." index="4" unique_id=624015437 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(771, 384)
 linked_walls = [NodePath("../e15_1"), NodePath("../e15_2")]
 
-[node name="b4" parent="." index="8" unique_id=590005844 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="b4" parent="." index="5" unique_id=590005844 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(765, -123)
 linked_walls = [NodePath("../e4")]
 
-[node name="b3_1" parent="." index="9" unique_id=324343489 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_odnog")]
+[node name="b3_1" parent="." index="6" unique_id=324343489 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_odnog")]
 position = Vector2(634, -249)
 linked_walls = [NodePath("../e3")]
 linked_buttons = [NodePath("../b3_2")]
 
-[node name="b3_2" parent="." index="10" unique_id=1418020171 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_odnog")]
+[node name="b3_2" parent="." index="7" unique_id=1418020171 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_odnog")]
 position = Vector2(383, -259)
 linked_walls = [NodePath("../e3")]
 linked_buttons = [NodePath("../b3_1")]
 
-[node name="b7_1" parent="." index="11" unique_id=148790486 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
+[node name="b7_1" parent="." index="8" unique_id=148790486 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
 position = Vector2(127, -254)
 linked_buttons = [NodePath("../b7_2")]
 
-[node name="b8" parent="." index="12" unique_id=889953360 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="b8" parent="." index="9" unique_id=889953360 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(-4, -128)
 linked_walls = [NodePath("../e8")]
 
-[node name="b14" parent="." index="13" unique_id=1020711834 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
+[node name="b14" parent="." index="10" unique_id=1020711834 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(-1, 141)
 linked_walls = [NodePath("../e14")]
 
-[node name="b12_1" parent="." index="14" unique_id=2112080753 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
+[node name="b12_1" parent="." index="11" unique_id=2112080753 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("2_odnog")]
 position = Vector2(-1, 384)
 linked_buttons = [NodePath("../b12_2")]
 
-[node name="e10" parent="." index="15" unique_id=625301696 instance=ExtResource("3_h1ril")]
+[node name="e10" parent="." index="12" unique_id=625301696 instance=ExtResource("3_h1ril")]
 position = Vector2(122, 392)
 
-[node name="e9" parent="." index="16" unique_id=1027823049 instance=ExtResource("3_h1ril")]
+[node name="e9" parent="." index="13" unique_id=1027823049 instance=ExtResource("3_h1ril")]
 position = Vector2(381, 392)
 
-[node name="e14" parent="." index="17" unique_id=34034921 instance=ExtResource("3_h1ril")]
+[node name="e14" parent="." index="14" unique_id=34034921 instance=ExtResource("3_h1ril")]
 position = Vector2(634, 390)
 
-[node name="e2" parent="." index="18" unique_id=556270424 instance=ExtResource("3_h1ril")]
+[node name="e2" parent="." index="15" unique_id=556270424 instance=ExtResource("3_h1ril")]
 position = Vector2(629, -126)
 
-[node name="e5" parent="." index="19" unique_id=1070845768 instance=ExtResource("3_h1ril")]
+[node name="e5" parent="." index="16" unique_id=1070845768 instance=ExtResource("3_h1ril")]
 position = Vector2(381, -128)
 
-[node name="e3" parent="." index="20" unique_id=1228956310 instance=ExtResource("3_h1ril")]
+[node name="e3" parent="." index="17" unique_id=1228956310 instance=ExtResource("3_h1ril")]
 position = Vector2(129, -128)
 
-[node name="e13" parent="." index="21" unique_id=6678994 instance=ExtResource("3_h1ril")]
+[node name="e13" parent="." index="18" unique_id=6678994 instance=ExtResource("3_h1ril")]
 position = Vector2(132, 138)
 
-[node name="b16_2" parent="." index="22" unique_id=1971756589 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
+[node name="b16_2" parent="." index="19" unique_id=1971756589 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
 position = Vector2(1153, 382)
 linked_buttons = [NodePath("../b16_1")]
 
-[node name="b17_1" parent="." index="23" unique_id=1210707856 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_opbea")]
+[node name="b17_1" parent="." index="20" unique_id=1210707856 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_opbea")]
 position = Vector2(1281, 513)
 linked_walls = [NodePath("../e17")]
 linked_buttons = [NodePath("../b17_2")]
 
-[node name="b17_2" parent="." index="24" unique_id=735486813 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_opbea")]
+[node name="b17_2" parent="." index="21" unique_id=735486813 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_opbea")]
 position = Vector2(1150, 127)
 linked_walls = [NodePath("../e17")]
 linked_buttons = [NodePath("../b17_1")]
 
-[node name="b9" parent="." index="25" unique_id=1174843282 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b9" parent="." index="22" unique_id=1174843282 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1791, 513)
 linked_walls = [NodePath("../e9")]
 
-[node name="b7_2" parent="." index="26" unique_id=1424866722 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
+[node name="b7_2" parent="." index="23" unique_id=1424866722 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
 position = Vector2(1919, 387)
 linked_buttons = [NodePath("../b7_1")]
 
-[node name="b10" parent="." index="27" unique_id=1470253803 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b10" parent="." index="24" unique_id=1470253803 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1917, 128)
 linked_walls = [NodePath("../e10")]
 
-[node name="b6" parent="." index="28" unique_id=1640120833 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b6" parent="." index="25" unique_id=1640120833 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1919, -128)
 linked_walls = [NodePath("../e6")]
 
-[node name="b5" parent="." index="29" unique_id=1942325451 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b5" parent="." index="26" unique_id=1942325451 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1794, -251)
 linked_walls = [NodePath("../e5")]
 
-[node name="b2" parent="." index="30" unique_id=317493590 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b2" parent="." index="27" unique_id=317493590 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1537, -259)
 linked_walls = [NodePath("../e2")]
 
-[node name="b12_2" parent="." index="31" unique_id=15200467 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
+[node name="b12_2" parent="." index="28" unique_id=15200467 node_paths=PackedStringArray("linked_buttons") instance=ExtResource("4_opbea")]
 position = Vector2(1278, -257)
 linked_buttons = [NodePath("../b12_1")]
 
-[node name="b13" parent="." index="32" unique_id=620971863 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
+[node name="b13" parent="." index="29" unique_id=620971863 node_paths=PackedStringArray("linked_walls") instance=ExtResource("4_opbea")]
 position = Vector2(1153, -132)
 linked_walls = [NodePath("../e13")]
 
-[node name="e15_1" parent="." index="33" unique_id=115385661 instance=ExtResource("5_u6why")]
+[node name="e15_1" parent="." index="30" unique_id=115385661 instance=ExtResource("5_u6why")]
 position = Vector2(1281, 384)
 
-[node name="e15_2" parent="." index="34" unique_id=1189744278 instance=ExtResource("5_u6why")]
+[node name="e15_2" parent="." index="31" unique_id=1189744278 instance=ExtResource("5_u6why")]
 position = Vector2(1280, 127)
 
-[node name="e6" parent="." index="35" unique_id=405540253 instance=ExtResource("5_u6why")]
+[node name="e6" parent="." index="32" unique_id=405540253 instance=ExtResource("5_u6why")]
 position = Vector2(1791, 387)
 
-[node name="e8" parent="." index="36" unique_id=1969914382 instance=ExtResource("5_u6why")]
+[node name="e8" parent="." index="33" unique_id=1969914382 instance=ExtResource("5_u6why")]
 position = Vector2(1791, 131)
 
-[node name="e4" parent="." index="37" unique_id=485878774 instance=ExtResource("5_u6why")]
+[node name="e4" parent="." index="34" unique_id=485878774 instance=ExtResource("5_u6why")]
 position = Vector2(1791, -126)
 
-[node name="e1" parent="." index="38" unique_id=841464457 instance=ExtResource("5_u6why")]
+[node name="e1" parent="." index="35" unique_id=841464457 instance=ExtResource("5_u6why")]
 position = Vector2(1537, -123)
 
-[node name="e11" parent="." index="39" unique_id=22469247 instance=ExtResource("5_u6why")]
+[node name="e11" parent="." index="36" unique_id=22469247 instance=ExtResource("5_u6why")]
 position = Vector2(1281, -128)
 
-[node name="e17" parent="." index="40" unique_id=1063230663 instance=ExtResource("5_u6why")]
+[node name="e17" parent="." index="37" unique_id=1063230663 instance=ExtResource("5_u6why")]
 position = Vector2(1534, 386)
