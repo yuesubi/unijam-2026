@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://xglduaafueqe"]
+
+[ext_resource type="Script" uid="uid://e8jurwjl0y65" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
+[ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_tt5f1"]
+[ext_resource type="PackedScene" uid="uid://bsbcv6n746omc" path="res://Scenes/volume_panel.tscn" id="2_48xlc"]
+
+[sub_resource type="Theme" id="Theme_1htm7"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_btwxh"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_vxqd5"]
+
+[node name="MainMenu" type="Control" unique_id=1431110107]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.003879618
+theme = SubResource("Theme_1htm7")
+script = ExtResource("1_1ehe0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=58732200]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=1410718139]
+layout_mode = 2
+theme = ExtResource("1_tt5f1")
+text = "Me when my robots are stuck
+in a basement that has colapsed"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1805315087]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+text = "PLAY"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1481655231]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=2018511787]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+text = "Quit"
+
+[node name="VolumePanel" parent="." unique_id=1826358502 instance=ExtResource("2_48xlc")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="SFXAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=821201831]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_btwxh")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"SFX"
+
+[node name="SoundtrackAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=85031159]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_vxqd5")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"Soundtrack"
+
+[connection signal="mouse_entered" from="VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="on_back_clicked" from="VolumePanel" to="." method="_on_volume_panel_on_back_clicked"]
