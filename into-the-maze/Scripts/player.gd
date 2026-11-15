@@ -65,9 +65,6 @@ func move(dir):
 		
 		# SFX player is moving for shure 
 		if sprite.visible : SfxPlayer.play(SfxPlayer.Step)
-	else :
-		# SFX player might not move 
-		if sprite.visible : SfxPlayer.play(SfxPlayer.Wall)
 		
 	
 
