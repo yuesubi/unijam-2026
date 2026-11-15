@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cac0rpqi68vt0"]
-
-[ext_resource type="PackedScene" uid="uid://c1v83wo26mk1n" path="res://Scenes/Meta/meta_scene.tscn" id="1_1ehla"]
-[ext_resource type="PackedScene" uid="uid://bw6nupoeb4a04" path="res://Scenes/Menus/main_menu.tscn" id="2_ruw55"]
-
-[node name="MetaMenu" type="Node2D" unique_id=254509591]
-
-[node name="MetaScene" parent="." unique_id=542726045 instance=ExtResource("1_1ehla")]
-first_scene = ExtResource("2_ruw55")

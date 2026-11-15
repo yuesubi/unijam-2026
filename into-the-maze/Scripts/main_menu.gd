@@ -1,4 +1,4 @@
-extends Control
+extends "res://Scripts/contenerized_scene.gd"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 func _on_play_button_pressed() -> void:
-	switching_to.emit(preload("res://Scenes/LevelSelectMenu.tscn"))
+	switching_to.emit(preload("res://Scenes/Menus/level_selection_menu.tscn"))
 	# get_tree().change_scene_to_file("res://Scenes/level_selection.tscn")
 
 
@@ -46,7 +46,3 @@ func _on_settings_button_mouse_entered() -> void:
 
 func _on_quit_button_mouse_entered() -> void:
 	SfxPlayer.play(SfxPlayer.Hover)
-
-# Scene
-
-signal switching_to(scene: PackedScene)

@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://c1v83wo26mk1n"]
-
-[ext_resource type="Script" uid="uid://cvqd7lunea645" path="res://Scripts/meta_scene.gd" id="1_e4ynh"]
-
-[node name="MetaScene" type="Node2D" unique_id=542726045]
-script = ExtResource("1_e4ynh")
-
-[node name="SubSceneHolder" type="Node2D" parent="." unique_id=1611991994]
-unique_name_in_owner = true

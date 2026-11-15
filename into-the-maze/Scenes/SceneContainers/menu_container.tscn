@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cac0rpqi68vt0"]
+
+[ext_resource type="Script" uid="uid://cvqd7lunea645" path="res://Scripts/scene_holder.gd" id="1_rb2tq"]
+[ext_resource type="PackedScene" uid="uid://bw6nupoeb4a04" path="res://Scenes/Menus/main_menu.tscn" id="2_pb70o"]
+
+[node name="MenuContainer" type="Control" unique_id=561338844]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuHolder" type="Control" parent="." unique_id=1560326532]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rb2tq")
+default_scene = ExtResource("2_pb70o")
