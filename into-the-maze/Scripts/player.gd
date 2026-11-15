@@ -64,10 +64,10 @@ func move(dir):
 		movement_ended.emit()
 		
 		# SFX player is moving for shure 
-		SfxPlayer.play(SfxPlayer.Step)
+		if sprite.visible : SfxPlayer.play(SfxPlayer.Step)
 	else :
 		# SFX player might not move 
-		SfxPlayer.play(SfxPlayer.Wall)
+		if sprite.visible : SfxPlayer.play(SfxPlayer.Wall)
 		
 	
 
@@ -110,7 +110,7 @@ func _on_area_entered(area: Area2D) -> void:
 			position = next_pos.snapped(Vector2.ONE * tile_size)
 			
 			# SFX 
-			SfxPlayer.play(SfxPlayer.Warp)
+			if sprite.visible : SfxPlayer.play(SfxPlayer.Warp)
 			
 			await movement_ended
 			warping = false
