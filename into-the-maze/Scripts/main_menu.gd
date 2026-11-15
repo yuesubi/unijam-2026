@@ -14,7 +14,8 @@ func _ready() -> void:
 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/level_selection.tscn")
+	switching_to.emit(preload("res://Scenes/LevelSelectMenu.tscn"))
+	# get_tree().change_scene_to_file("res://Scenes/level_selection.tscn")
 
 
 func _on_quit_button_pressed() -> void:
@@ -45,3 +46,7 @@ func _on_settings_button_mouse_entered() -> void:
 
 func _on_quit_button_mouse_entered() -> void:
 	SfxPlayer.play(SfxPlayer.Hover)
+
+# Scene
+
+signal switching_to(scene: PackedScene)

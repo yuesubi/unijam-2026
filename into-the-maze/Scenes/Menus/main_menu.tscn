@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dkehbnhm588cy"]
+[gd_scene format=3 uid="uid://bw6nupoeb4a04"]
 
 [ext_resource type="Script" uid="uid://e8jurwjl0y65" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
 [ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_tt5f1"]
@@ -67,7 +67,6 @@ autoplay = true
 attenuation = 0.0
 max_polyphony = 5
 panning_strength = 0.0
-bus = &"SFX"
 
 [node name="SoundtrackAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=85031159]
 unique_name_in_owner = true
@@ -76,7 +75,6 @@ autoplay = true
 attenuation = 0.0
 max_polyphony = 5
 panning_strength = 0.0
-bus = &"Soundtrack"
 
 [connection signal="mouse_entered" from="VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
