@@ -27,31 +27,31 @@ zoom = Vector2(0.28, 0.28)
 
 [node name="Portal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_l6edt")]
 position = Vector2(1, 2)
-linkedPortal = NodePath("../Portal6")
+linkedPortal = NodePath("../Portal7")
 
 [node name="Portal2" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=43237878 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_l6edt")]
-position = Vector2(773, 768)
-linkedPortal = NodePath("../Portal7")
+position = Vector2(773, 776)
+linkedPortal = NodePath("../Portal")
 
 [node name="Portal3" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=629475396 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_l6edt")]
 position = Vector2(1277, 1280)
-linkedPortal = NodePath("../Portal")
+linkedPortal = NodePath("../Portal2")
 
 [node name="Portal4" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=183768428 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_03pla")]
 position = Vector2(121, 1280)
-linkedPortal = NodePath("../Portal2")
+linkedPortal = NodePath("../Portal3")
 
 [node name="Portal5" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=821315461 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_03pla")]
 position = Vector2(385, 640)
-linkedPortal = NodePath("../Portal3")
+linkedPortal = NodePath("../Portal4")
 
 [node name="Portal6" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=1859980065 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_03pla")]
 position = Vector2(645, 380)
-linkedPortal = NodePath("../Portal4")
+linkedPortal = NodePath("../Portal5")
 
 [node name="Portal7" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=595759542 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("3_03pla")]
 position = Vector2(1281, 128)
-linkedPortal = NodePath("../Portal5")
+linkedPortal = NodePath("../Portal6")
 
 [node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1877904564]
 position = Vector2(1658, 67.00003)
