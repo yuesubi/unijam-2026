@@ -1,7 +1,11 @@
 extends Area2D
+class_name Player
 
 @onready var ray = $RayCast2D
 @export var tile_map: TileMap
+
+@onready var player = $"../Player"
+@onready var invis_player = $"../invis_player"
 
 var sprite: Sprite2D
 
@@ -31,7 +35,7 @@ func _ready():
 	sprite = get_child(0)
 
 func _unhandled_input(event):
-	if moving:
+	if moving or player.warping or invis_player.warping:
 		return
 	for dir in inputs.keys():
 		if event.is_action_pressed(dir):
@@ -99,7 +103,7 @@ func _on_area_entered(area: Area2D) -> void:
 				sprite.show()
 			else:
 				sprite.hide()
-			warping = false
+			movement_ended.emit()
 		else:
 			warping = true
 			var next_pos = area.linkedPortal.position
@@ -107,3 +111,6 @@ func _on_area_entered(area: Area2D) -> void:
 			
 			# SFX 
 			SfxPlayer.play(SfxPlayer.Warp)
+			
+			await movement_ended
+			warping = false
