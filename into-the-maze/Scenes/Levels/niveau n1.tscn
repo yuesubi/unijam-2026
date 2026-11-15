@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_7h03e"]
 [ext_resource type="Script" uid="uid://cfwf7yp3vvev6" path="res://Scripts/specific_scripts/n1_level.gd" id="2_mkfyw"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="3_2xv4o"]
 
 [node name="level_base2" unique_id=402574150 instance=ExtResource("1_7h03e")]
 
@@ -25,13 +26,36 @@ position = Vector2(611, 178)
 scale = Vector2(13.734375, 3.828125)
 
 [node name="fondNormal" parent="level_base2" index="5" unique_id=605897269]
-position = Vector2(-1522.9999, 65.99999)
+position = Vector2(601.49994, -332.5)
+scale = Vector2(1.1713333, 0.3199122)
 
 [node name="blueBack" parent="level_base2" index="6" unique_id=658004868]
-position = Vector2(-2099, 138)
+position = Vector2(623, 124.5)
+scale = Vector2(2.108, 0.931)
 
 [node name="tvbutton" parent="level_base2" index="7" unique_id=683474113]
 position = Vector2(-680, 0)
 
 [node name="rubalise" parent="level_base2" index="8" unique_id=1447633655]
-position = Vector2(-1512, 166)
+position = Vector2(599.00006, -158.5)
+scale = Vector2(3.034375, 0.94531244)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" index="9" unique_id=1088727906]
+z_index = -100
+position = Vector2(613.00006, -559)
+scale = Vector2(3.034375, 1)
+texture = ExtResource("3_2xv4o")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" index="10" unique_id=1182637204]
+z_index = -100
+position = Vector2(-318.99994, -634.5433)
+rotation = 1.5707964
+scale = Vector2(1.6534659, 1)
+texture = ExtResource("3_2xv4o")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" index="11" unique_id=2121127143]
+z_index = -100
+position = Vector2(1521, -635.00006)
+rotation = 1.5707964
+scale = Vector2(1.6534659, 1)
+texture = ExtResource("3_2xv4o")

@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://w6hr7owdioep"]
 
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_d5qmi"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="2_fy0t5"]
 [ext_resource type="PackedScene" uid="uid://ba8tmddrsgu8t" path="res://Scenes/button/bomb_wall.tscn" id="2_spw4c"]
 [ext_resource type="PackedScene" uid="uid://k853sanxs4hq" path="res://Scenes/button/button.tscn" id="3_oyjem"]
 [ext_resource type="PackedScene" uid="uid://dmwjnrum55mpr" path="res://Scenes/button/radar_bomb_wall.tscn" id="5_fy0t5"]
@@ -26,13 +27,36 @@ position = Vector2(1226.5, 326.50003)
 scale = Vector2(7.5078125, 8.2421875)
 
 [node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
-position = Vector2(-1194.9999, 475.99997)
+position = Vector2(193.25003, 325.50003)
+scale = Vector2(0.635, 0.7737921)
 
 [node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
-position = Vector2(-1554, 572)
+position = Vector2(1268, 334)
+scale = Vector2(1.23, 1.276)
 
 [node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
-position = Vector2(-1011, 288)
+position = Vector2(141.5, -202.5)
+scale = Vector2(1.7453125, 1.1640625)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=300330827]
+z_index = -100
+position = Vector2(156.50005, 881)
+scale = Vector2(1.6984377, 1.390625)
+texture = ExtResource("2_fy0t5")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=1847991346]
+z_index = -100
+position = Vector2(-328, 325.40482)
+rotation = 1.5707964
+scale = Vector2(1.659276, 1.390625)
+texture = ExtResource("2_fy0t5")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=158151072]
+z_index = -100
+position = Vector2(612, 337.75925)
+rotation = 1.5707964
+scale = Vector2(2.1161628, 1.390625)
+texture = ExtResource("2_fy0t5")
 
 [node name="explWallLeft" parent="." index="1" unique_id=625301696 instance=ExtResource("2_spw4c")]
 position = Vector2(1, 125)

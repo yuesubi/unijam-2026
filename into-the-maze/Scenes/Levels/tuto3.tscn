@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_rgcfj"]
 [ext_resource type="Script" uid="uid://chf7pu6xcm8sc" path="res://Scripts/specific_scripts/tuto3.gd" id="2_wahho"]
 [ext_resource type="Texture2D" uid="uid://cf2lsp2od0ra7" path="res://Assets/spider/Spider_Right.png" id="3_r8ab7"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="4_i6ymq"]
 
 [node name="level_base2" unique_id=402574150 instance=ExtResource("1_rgcfj")]
 
@@ -29,13 +30,36 @@ position = Vector2(706.99994, 124.000015)
 scale = Vector2(13.484375, 3.1562498)
 
 [node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
-position = Vector2(-1108.9999, 273.99997)
+position = Vector2(695.2498, 655)
+scale = Vector2(1.1823334, 0.3001464)
 
 [node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
-position = Vector2(-796, 305)
+position = Vector2(654.5, 166)
+scale = Vector2(2.253, 1)
 
 [node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
 position = Vector2(-648, 60)
 
 [node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
-position = Vector2(-739, 291)
+position = Vector2(717, 899)
+scale = Vector2(3.14375, 1)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=2144496574]
+z_index = -100
+position = Vector2(719.99994, 454)
+scale = Vector2(3.14375, 1)
+texture = ExtResource("4_i6ymq")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=815250168]
+z_index = -100
+position = Vector2(-227, 1017)
+rotation = 1.5707964
+scale = Vector2(1.9445491, 1)
+texture = ExtResource("4_i6ymq")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1888701955]
+z_index = -100
+position = Vector2(1619, 1017)
+rotation = 1.5707964
+scale = Vector2(1.9445491, 1)
+texture = ExtResource("4_i6ymq")

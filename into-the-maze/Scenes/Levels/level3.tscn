@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_pcvc2"]
 [ext_resource type="Texture2D" uid="uid://bfqg6erlao4g6" path="res://Assets/back/Bloc_ Fond_Radar.png" id="2_jwpnw"]
+[ext_resource type="Texture2D" uid="uid://dbxprnpuqfkmo" path="res://Assets/back/Fond_Reel.png" id="3_6cxjt"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="4_qxkdu"]
 
 [node name="level_base" unique_id=402574150 instance=ExtResource("1_pcvc2")]
 
@@ -19,8 +21,8 @@ position = Vector2(486, 213)
 zoom = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1877904564]
-position = Vector2(727, -242.50002)
-scale = Vector2(12.0625, 2.3984375)
+position = Vector2(727, -250.50002)
+scale = Vector2(12.0625, 2.2734375)
 
 [node name="Sprite2D3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=2047564896]
 z_index = -50
@@ -35,13 +37,68 @@ scale = Vector2(6.0429697, 9.390625)
 texture = ExtResource("2_jwpnw")
 
 [node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=605897269]
-position = Vector2(-1607.9999, 127.99999)
+position = Vector2(32.125088, 191)
+scale = Vector2(0.84150004, 0.3426062)
 
-[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=658004868]
-position = Vector2(-1444, 111)
+[node name="fondNormal2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=872357483]
+z_index = -50
+position = Vector2(-341.5, 210.50002)
+scale = Vector2(0.35133338, 0.8572475)
+texture = ExtResource("3_6cxjt")
 
-[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=683474113]
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=658004868]
+position = Vector2(842.5, 238.5)
+scale = Vector2(1.945, 1.443)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=683474113]
 position = Vector2(-1070, -13)
 
-[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=1447633655]
-position = Vector2(-1274, 154)
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1447633655]
+position = Vector2(-392, -389)
+scale = Vector2(1, 1.390625)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="12" unique_id=1515436114]
+z_index = -100
+position = Vector2(-398, 816)
+scale = Vector2(1, 1.34375)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise5" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="13" unique_id=2079830765]
+z_index = -100
+position = Vector2(-617, 214.74078)
+rotation = 1.5707964
+scale = Vector2(1.6914352, 1)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise7" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="14" unique_id=1717388661]
+z_index = -100
+position = Vector2(-112.16943, -83.72099)
+rotation = 1.5707964
+scale = Vector2(1.2795165, 0.7057724)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise8" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="15" unique_id=816638876]
+z_index = -100
+position = Vector2(-109, 507)
+rotation = 1.5707964
+scale = Vector2(1.2795165, 0.7057724)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise6" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="16" unique_id=1212788086]
+z_index = -100
+position = Vector2(623, 189.56924)
+rotation = 1.5707964
+scale = Vector2(0.81855965, 1)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="17" unique_id=645166241]
+z_index = -100
+position = Vector2(277, 389)
+scale = Vector2(1.196875, 1)
+texture = ExtResource("4_qxkdu")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="18" unique_id=1708623198]
+z_index = -100
+position = Vector2(274.00003, -10)
+scale = Vector2(1.196875, 1)
+texture = ExtResource("4_qxkdu")

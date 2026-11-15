@@ -3,7 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_fjdqc"]
 [ext_resource type="PackedScene" uid="uid://ca3mxg3j3gm5h" path="res://Scenes/portal/portal.tscn" id="2_f20yq"]
 [ext_resource type="Texture2D" uid="uid://bfqg6erlao4g6" path="res://Assets/back/Bloc_ Fond_Radar.png" id="2_vm37b"]
+[ext_resource type="Texture2D" uid="uid://dbxprnpuqfkmo" path="res://Assets/back/Fond_Reel.png" id="3_qpiqc"]
 [ext_resource type="PackedScene" uid="uid://ddtidhypefqra" path="res://Scenes/portal/portal_radar.tscn" id="3_vm37b"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="4_ufbuf"]
 
 [node name="level_base" unique_id=402574150 instance=ExtResource("1_fjdqc")]
 
@@ -67,16 +69,46 @@ scale = Vector2(2.6981204, 1.1718749)
 texture = ExtResource("2_vm37b")
 
 [node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="12" unique_id=605897269]
-position = Vector2(-1529.9999, 344.99997)
+position = Vector2(265, -206)
+scale = Vector2(0.8836669, 0.10761348)
 
-[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="13" unique_id=658004868]
-position = Vector2(-1191, 235)
+[node name="fondNormal2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="13" unique_id=1794739325]
+z_index = -50
+position = Vector2(-205.93753, 328.625)
+scale = Vector2(0.25325006, 0.67551243)
+texture = ExtResource("3_qpiqc")
 
-[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="14" unique_id=683474113]
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="14" unique_id=658004868]
+position = Vector2(799, 235)
+scale = Vector2(1.7260001, 1.226)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="15" unique_id=683474113]
 position = Vector2(-694, 72)
 
-[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="15" unique_id=1447633655]
-position = Vector2(-1018, 72)
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="16" unique_id=1447633655]
+z_index = -49
+position = Vector2(501.35562, 229.64441)
+rotation = 2.3561945
+scale = Vector2(2.8053966, 1)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="17" unique_id=124186164]
+z_index = -100
+position = Vector2(260.3546, -276)
+scale = Vector2(2.366733, 1)
+texture = ExtResource("4_ufbuf")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="18" unique_id=21939032]
+z_index = -100
+position = Vector2(-784, 806)
+scale = Vector2(2.366733, 1)
+texture = ExtResource("4_ufbuf")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="19" unique_id=962400175]
+z_index = -100
+position = Vector2(-419, 336.99994)
+rotation = 1.5707964
+scale = Vector2(2.366733, 1)
+texture = ExtResource("4_ufbuf")
 
 [node name="Portal" parent="." index="1" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("2_f20yq")]
 position = Vector2(383, -123)
