@@ -1,7 +1,7 @@
 extends "res://Scripts/contenerized_scene.gd"
 
 signal back(scene: PackedScene)
-var main_menu_scene = preload("res://Scenes/Menus/main_menu.tscn")
+var main_menu_scene = load("res://Scenes/Menus/main_menu.tscn")
 
 class LevelEntry:
 	var name: String
@@ -58,4 +58,9 @@ func button_hover() :
 
 
 func _on_back_button_pressed() -> void:
-	back.emit(main_menu_scene)
+	SoundtrackManager.play_main_menu()
+	switching_to.emit(main_menu_scene)
+
+
+func _on_back_button_mouse_entered() -> void:
+	SfxPlayer.play(SfxPlayer.Hover)

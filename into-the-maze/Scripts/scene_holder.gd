@@ -17,6 +17,7 @@ func reload_scene() -> void:
 	switch_to(self.current_scene)
 
 func switch_to(packed_scene: PackedScene) -> void:
+	
 	for child in self.get_children():
 		child.queue_free()
 	

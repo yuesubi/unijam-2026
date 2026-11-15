@@ -6,10 +6,6 @@
 
 [sub_resource type="Theme" id="Theme_1htm7"]
 
-[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_btwxh"]
-
-[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_vxqd5"]
-
 [node name="MainMenu" type="Control" unique_id=1431110107]
 layout_mode = 3
 anchors_preset = 15
@@ -67,24 +63,6 @@ offset_left = -300.8902
 offset_top = -248.91199
 offset_right = 299.1098
 offset_bottom = 251.08801
-
-[node name="SFXAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=821201831]
-unique_name_in_owner = true
-rotation = -0.0038796184
-stream = SubResource("AudioStreamPolyphonic_btwxh")
-autoplay = true
-attenuation = 0.0
-max_polyphony = 5
-panning_strength = 0.0
-
-[node name="SoundtrackAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=85031159]
-unique_name_in_owner = true
-rotation = -0.0038796184
-stream = SubResource("AudioStreamPolyphonic_vxqd5")
-autoplay = true
-attenuation = 0.0
-max_polyphony = 5
-panning_strength = 0.0
 
 [connection signal="mouse_entered" from="VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
