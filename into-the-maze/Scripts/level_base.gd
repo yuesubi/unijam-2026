@@ -7,12 +7,14 @@ var tile_size = 128
 
 var objective:int = 0
 
+signal death
+
 func _on_death():
 	# SFX (to be safe)
 	SfxPlayer.play(SfxPlayer.Death) 
 	
-	# Code 
-	get_tree().call_deferred("reload_current_scene")
+	# Code
+	death.emit()
 	
 
 func _on_objective() -> void:
@@ -21,7 +23,7 @@ func _on_objective() -> void:
 		print("victory")
 		
 		# SFX
-		SfxPlayer.play(SfxPlayer.Victory) 
+		SfxPlayer.play(SfxPlayer.Victory)
 
 func _on_objective_left() -> void:
 	objective-=1
