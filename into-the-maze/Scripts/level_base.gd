@@ -1,4 +1,5 @@
 extends Node2D
+class_name Level_base
 
 var cross = preload("res://Scenes/cross.tscn")
 var instance
