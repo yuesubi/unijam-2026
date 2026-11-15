@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://e8jurwjl0y65" path="res://Scripts/Menu/main_menu.gd" id="1_1ehe0"]
 [ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_tt5f1"]
 [ext_resource type="PackedScene" uid="uid://bsbcv6n746omc" path="res://Scenes/Panels/volume_panel.tscn" id="2_48xlc"]
+[ext_resource type="Texture2D" uid="uid://b68dfdk2a3ev7" path="res://Assets/Menu.png" id="2_aur2u"]
+[ext_resource type="Texture2D" uid="uid://cnx4m0p1xrhru" path="res://Assets/Menus/Group 155.png" id="4_neey8"]
+[ext_resource type="Texture2D" uid="uid://p2cl6in23fwh" path="res://Assets/Menus/Setting.png" id="5_4fgt5"]
+[ext_resource type="Texture2D" uid="uid://sy5rbilfokwa" path="res://Assets/Menus/Quit.png" id="6_j4kqa"]
 
 [sub_resource type="Theme" id="Theme_1htm7"]
 
@@ -17,6 +21,52 @@ rotation = -0.003879618
 theme = SubResource("Theme_1htm7")
 script = ExtResource("1_1ehe0")
 
+[node name="Menu" type="Sprite2D" parent="." unique_id=1712189689]
+position = Vector2(574.1179, 322.86166)
+scale = Vector2(0.5944793, 0.5924247)
+texture = ExtResource("2_aur2u")
+
+[node name="Title" type="Label" parent="." unique_id=1410718139]
+layout_mode = 0
+offset_left = -483.74124
+offset_top = 190.1247
+offset_right = 1629.2588
+offset_bottom = 279.1247
+theme = ExtResource("1_tt5f1")
+text = "Me when my robots are stuck
+in a basement that has collapsed"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="." unique_id=1805315087]
+layout_mode = 0
+offset_left = 811.7214
+offset_top = 331.15167
+offset_right = 1112.7214
+offset_bottom = 389.15167
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+icon = ExtResource("4_neey8")
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1481655231]
+layout_mode = 0
+offset_left = 811.3683
+offset_top = 422.15097
+offset_right = 1112.3683
+offset_bottom = 480.15097
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+icon = ExtResource("5_4fgt5")
+
+[node name="QuitButton" type="Button" parent="." unique_id=2018511787]
+layout_mode = 0
+offset_left = 810.98425
+offset_top = 521.1502
+offset_right = 1111.9843
+offset_bottom = 579.1502
+size_flags_horizontal = 4
+theme = ExtResource("1_tt5f1")
+icon = ExtResource("6_j4kqa")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=58732200]
 layout_mode = 1
 anchors_preset = 14
@@ -26,34 +76,9 @@ anchor_bottom = 0.5
 offset_left = -480.91156
 offset_top = -125.13504
 offset_right = 480.08838
-offset_bottom = 128.86496
+offset_bottom = -39.286194
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Title" type="Label" parent="VBoxContainer" unique_id=1410718139]
-layout_mode = 2
-theme = ExtResource("1_tt5f1")
-text = "Me when my robots are stuck
-in a basement that has collapsed"
-horizontal_alignment = 1
-
-[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1805315087]
-layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("1_tt5f1")
-text = "PLAY"
-
-[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1481655231]
-layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("1_tt5f1")
-text = "Settings"
-
-[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=2018511787]
-layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("1_tt5f1")
-text = "Quit"
 
 [node name="VolumePanel" parent="." unique_id=1826358502 instance=ExtResource("2_48xlc")]
 unique_name_in_owner = true
@@ -64,10 +89,10 @@ offset_top = -248.91199
 offset_right = 299.1098
 offset_bottom = 251.08801
 
-[connection signal="mouse_entered" from="VBoxContainer/PlayButton" to="." method="_on_play_button_mouse_entered"]
-[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="mouse_entered" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_mouse_entered"]
-[connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="mouse_entered" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_entered"]
-[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="mouse_entered" from="PlayButton" to="." method="_on_play_button_mouse_entered"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="mouse_entered" from="SettingsButton" to="." method="_on_settings_button_mouse_entered"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="mouse_entered" from="QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="on_back_clicked" from="VolumePanel" to="." method="_on_volume_panel_on_back_clicked"]
