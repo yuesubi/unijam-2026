@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cwvbwndr84e8n"]
+
+[ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="1_2hvjc"]
+[ext_resource type="Script" uid="uid://d2pjmrrdoqhl3" path="res://Scenes/Panels/success_menu.gd" id="2_su21n"]
+
+[node name="SuccessMenu" type="Control" unique_id=1104165292]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_2hvjc")
+script = ExtResource("2_su21n")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=974098104]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -21.5
+offset_right = 33.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=46524117]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1351700107]
+layout_mode = 2
+text = "GG"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1255177674]
+layout_mode = 2
+text = "continue"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="_on_go_selector_pressed"]

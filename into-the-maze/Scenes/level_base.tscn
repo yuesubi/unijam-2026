@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://eac217787lqn" path="res://Assets/back/Television.png" id="9_3bmkt"]
 [ext_resource type="Texture2D" uid="uid://ce3y4qx2vasod" path="res://Assets/back/Ellipse 168.png" id="9_xnoyx"]
 [ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="10_3bmkt"]
+[ext_resource type="PackedScene" uid="uid://cwvbwndr84e8n" path="res://Scenes/Panels/success_menu.tscn" id="12_3bmkt"]
+[ext_resource type="Theme" uid="uid://bhf2ge2oemdv2" path="res://Ui/ui_theme.tres" id="12_16v77"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8b3hd"]
 size = Vector2(117, 121)
@@ -130,6 +132,57 @@ texture = ExtResource("9_xnoyx")
 z_index = -100
 texture = ExtResource("10_3bmkt")
 
+[node name="Control" type="Control" parent="." unique_id=1167568828]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("12_16v77")
+
+[node name="SuccessMenu" parent="Control" unique_id=1104165292 instance=ExtResource("12_3bmkt")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="Move" type="Label" parent="Control" unique_id=1357546715]
+layout_mode = 1
+offset_right = 277.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 24
+text = "Arrows to move"
+
+[node name="Restart" type="Label" parent="Control" unique_id=2112254864]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -138.5
+offset_right = 138.5
+offset_bottom = 25.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "R to restart"
+horizontal_alignment = 1
+
+[node name="Flag" type="Label" parent="Control" unique_id=1793559685]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -277.0
+offset_bottom = 25.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "L Click to flag"
+horizontal_alignment = 2
+
 [connection signal="death" from="level_base2" to="." method="reload_scene"]
 [connection signal="area_entered" from="level_base2/Player" to="level_base2/Player" method="_on_area_entered"]
 [connection signal="body_shape_entered" from="level_base2/Player" to="level_base2/Player" method="_on_body_shape_entered"]
@@ -145,3 +198,4 @@ texture = ExtResource("10_3bmkt")
 [connection signal="movement_ended" from="level_base2/invis_player" to="level_base2/invis_player" method="_on_movement_ended"]
 [connection signal="objective" from="level_base2/invis_player" to="level_base2" method="_on_objective"]
 [connection signal="objective_left" from="level_base2/invis_player" to="level_base2" method="_on_objective_left"]
+[connection signal="go_to_selector" from="Control/SuccessMenu" to="level_base2" method="_on_success_menu_go_to_selector"]

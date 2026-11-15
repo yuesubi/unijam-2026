@@ -27,6 +27,8 @@ func _on_objective() -> void:
 		
 		# SFX
 		SfxPlayer.play(SfxPlayer.Finish)
+		
+		%SuccessMenu.visible = true
 
 func _on_objective_left() -> void:
 	objective-=1
@@ -75,3 +77,11 @@ func spawn_cross(pos):
 		instance = cross.instantiate()
 		instance.position = pos
 		add_child(instance)
+
+
+func _on_success_menu_go_to_selector() -> void:
+	# SFX
+	SoundtrackManager.stop_main_game()
+	
+	GameData.scene_to_load = "res://Scenes/Menus/level_selection_menu.tscn"
+	get_tree().change_scene_to_file("res://Scenes/SceneContainers/meta_menu.tscn")
