@@ -38,7 +38,7 @@ grow_vertical = 2
 layout_mode = 2
 theme = ExtResource("1_tt5f1")
 text = "Me when my robots are stuck
-in a basement that has colapsed"
+in a basement that has collapsed"
 horizontal_alignment = 1
 
 [node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1805315087]
