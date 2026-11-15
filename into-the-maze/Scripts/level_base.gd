@@ -15,8 +15,10 @@ func _on_death():
 	SfxPlayer.play(SfxPlayer.Death) 
 	
 	# Code
+	self.call_deferred("emit_death")
+
+func emit_death():
 	death.emit()
-	
 
 func _on_objective() -> void:
 	objective+=1
