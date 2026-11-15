@@ -1,0 +1,55 @@
+[gd_scene format=4 uid="uid://bhl4seniqbrxo"]
+
+[ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_nqhau"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="2_nopmg"]
+
+[node name="LevelBase" unique_id=1866254782 instance=ExtResource("1_nqhau")]
+
+[node name="Player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="0" unique_id=1499959281]
+position = Vector2(516, 261)
+
+[node name="invis_player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="1" unique_id=1802008750]
+position = Vector2(515, 898)
+
+[node name="TileMap" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="2" unique_id=1646785559]
+tile_map_data = PackedByteArray("AAABAAMACwAAAAAAAAABAAIACwACAAAAAAABAAEACwAAAAAAAAACAAEACwACAAAAAAADAAEACwAAAAAAAAAEAAEACwAAAAAAAAAFAAEACwACAAAAAAAGAAEACwAAAAAAAAAHAAEACwAAAAAAAAAIAAEACwACAAAAAAAJAAEACwAAAAAAAAAKAAEACwAAAAAAAAAKAAIACwACAAAAAAAKAAMACwAAAAAAAAAJAAMACwAAAAAAAAAIAAMACwACAAAAAAAHAAMACwAAAAAAAAAGAAMACwAAAAAAAAAFAAMACwACAAAAAAAEAAMACwAAAAAAAAADAAMACwAAAAAAAAACAAMACwACAAAAAAACAAIACwADAAAAAAADAAIACwAAAAAAAAAEAAIACwAAAAAAAAAFAAIACwAAAAAAAAAGAAIACwAAAAAAAAAHAAIACwAAAAAAAAAIAAIACwAAAAAAAAAJAAIACwAAAAAAAAD//wUACwABAAEAAAAAAAUACwACAAEAAAABAAUACwABAAEAAAACAAUACwAAAAEAAAADAAUACwAAAAEAAAAEAAUACwAAAAEAAAAFAAUACwACAAEAAAAGAAUACwAAAAEAAAAHAAUACwAAAAEAAAAIAAUACwAAAAEAAAAJAAUACwAAAAEAAAAKAAUACwAAAAEAAAALAAUACwAAAAEAAAAMAAUACwAAAAEAAAAMAAYACwACAAEAAAALAAYACwAAAAEAAAAKAAYACwAAAAEAAAAJAAYACwAAAAEAAAAIAAYACwAAAAEAAAAHAAYACwAAAAEAAAAGAAYACwAAAAEAAAAFAAYACwAAAAEAAAAEAAYACwABAAEAAAADAAYACwAAAAEAAAACAAYACwABAAEAAAABAAYACwAAAAEAAAAAAAYACwAAAAEAAAD//wYACwABAAEAAAD//wcACwABAAEAAAD//wgACwAAAAEAAAAAAAgACwAAAAEAAAABAAgACwAAAAEAAAACAAgACwAAAAEAAAADAAgACwAAAAEAAAAEAAgACwAAAAEAAAAFAAgACwAAAAEAAAAGAAgACwAAAAEAAAAHAAgACwABAAEAAAAIAAgACwAAAAEAAAAJAAgACwAAAAEAAAAKAAgACwAAAAEAAAALAAgACwABAAEAAAAMAAgACwAAAAEAAAAMAAcACwAAAAEAAAALAAcACwAAAAEAAAAKAAcACwABAAEAAAAJAAcACwAAAAEAAAAIAAcACwABAAEAAAAHAAcACwAAAAEAAAAGAAcACwAAAAEAAAAFAAcACwAAAAEAAAAEAAcACwAAAAEAAAADAAcACwADAAEAAAACAAcACwAAAAEAAAABAAcACwAAAAEAAAAAAAcACwAAAAEAAAA=")
+
+[node name="Camera2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="3" unique_id=1721326176]
+position = Vector2(775, 605)
+zoom = Vector2(0.52, 0.52)
+
+[node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1877904564]
+position = Vector2(778.99994, 898.99994)
+scale = Vector2(16.046873, 4.4531255)
+
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
+position = Vector2(779.99994, 304)
+scale = Vector2(1.3626666, 0.341142)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
+position = Vector2(776, 1084)
+scale = Vector2(2.268, 1)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
+position = Vector2(779, 514)
+scale = Vector2(3.490625, 1)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=1309470183]
+z_index = -100
+position = Vector2(777, 44)
+scale = Vector2(3.490625, 1)
+texture = ExtResource("2_nopmg")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=1169539250]
+z_index = -100
+position = Vector2(-274.68326, 277.91052)
+rotation = -1.5615534
+scale = Vector2(0.91431934, 1)
+texture = ExtResource("2_nopmg")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1402836857]
+z_index = -100
+position = Vector2(1825.0004, 277.99997)
+rotation = -1.5615534
+scale = Vector2(0.91431934, 1)
+texture = ExtResource("2_nopmg")
