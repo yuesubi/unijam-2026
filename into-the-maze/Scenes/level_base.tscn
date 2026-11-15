@@ -132,7 +132,9 @@ texture = ExtResource("9_xnoyx")
 z_index = -100
 texture = ExtResource("10_3bmkt")
 
-[node name="Control" type="Control" parent="." unique_id=1167568828]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=171978780]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1167568828]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -141,7 +143,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_16v77")
 
-[node name="SuccessMenu" parent="Control" unique_id=1104165292 instance=ExtResource("12_3bmkt")]
+[node name="SuccessMenu" parent="CanvasLayer/Control" unique_id=1104165292 instance=ExtResource("12_3bmkt")]
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
@@ -151,14 +153,14 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 
-[node name="Move" type="Label" parent="Control" unique_id=1357546715]
+[node name="Move" type="Label" parent="CanvasLayer/Control" unique_id=1357546715]
 layout_mode = 1
 offset_right = 277.0
 offset_bottom = 25.0
 theme_override_font_sizes/font_size = 24
 text = "Arrows to move"
 
-[node name="Restart" type="Label" parent="Control" unique_id=2112254864]
+[node name="Restart" type="Label" parent="CanvasLayer/Control" unique_id=2112254864]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -171,7 +173,7 @@ theme_override_font_sizes/font_size = 24
 text = "R to restart"
 horizontal_alignment = 1
 
-[node name="Flag" type="Label" parent="Control" unique_id=1793559685]
+[node name="Flag" type="Label" parent="CanvasLayer/Control" unique_id=1793559685]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -198,4 +200,4 @@ horizontal_alignment = 2
 [connection signal="movement_ended" from="level_base2/invis_player" to="level_base2/invis_player" method="_on_movement_ended"]
 [connection signal="objective" from="level_base2/invis_player" to="level_base2" method="_on_objective"]
 [connection signal="objective_left" from="level_base2/invis_player" to="level_base2" method="_on_objective_left"]
-[connection signal="go_to_selector" from="Control/SuccessMenu" to="level_base2" method="_on_success_menu_go_to_selector"]
+[connection signal="go_to_selector" from="CanvasLayer/Control/SuccessMenu" to="level_base2" method="_on_success_menu_go_to_selector"]
