@@ -1,4 +1,4 @@
-extends Control
+extends "res://Scripts/contenerized_scene.gd"
 
 class LevelEntry:
 	var name: String
@@ -30,7 +30,8 @@ func _ready() -> void:
 		button.text = level.name
 		button.pressed.connect(
 			func() -> void:
-				get_tree().change_scene_to_file(level.scene_path)
+				GameData.scene_to_load = level.scene_path
+				get_tree().change_scene_to_file("res://Scenes/SceneContainers/level_container.tscn")
 		)
 		level_container.add_child(button)
 
