@@ -18,6 +18,7 @@ var levels: Array[LevelEntry] = [
 	LevelEntry.new("Level 3", "res://Scenes/Levels/level1.tscn"),
 	LevelEntry.new("Niveau n1", "res://Scenes/Levels/niveau n1.tscn"),
 	LevelEntry.new("Niveau n2", "res://Scenes/Levels/niveau n2.tscn"),
+	LevelEntry.new("Niveau Final", "res://Scenes/Levels/level_Final.tscn"),
 ]
 
 @onready var level_container: HFlowContainer = %LevelContainer
