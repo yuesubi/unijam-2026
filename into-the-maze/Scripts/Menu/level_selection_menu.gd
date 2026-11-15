@@ -17,11 +17,13 @@ var levels: Array[LevelEntry] = [
 	LevelEntry.new("Tuto 3", "res://Scenes/Levels/tuto3.tscn"),
 	LevelEntry.new("Tuto 4", "res://Scenes/Levels/tuto4.tscn"),
 	LevelEntry.new("Level 1", "res://Scenes/Levels/level1.tscn"),
-	LevelEntry.new("Level 2", "res://Scenes/Levels/level1.tscn"),
-	LevelEntry.new("Level 3", "res://Scenes/Levels/level1.tscn"),
-	LevelEntry.new("Niveau n1", "res://Scenes/Levels/niveau n1.tscn"),
-	LevelEntry.new("Niveau n2", "res://Scenes/Levels/niveau n2.tscn"),
-	LevelEntry.new("Niveau Final", "res://Scenes/Levels/level_Final.tscn"),
+	LevelEntry.new("Level 2", "res://Scenes/Levels/level2.tscn"),
+	LevelEntry.new("Level 3", "res://Scenes/Levels/level3.tscn"),
+	LevelEntry.new("Level 4", "res://Scenes/Levels/niveau n1.tscn"),
+	LevelEntry.new("Level 5", "res://Scenes/Levels/niveau n2.tscn"),
+	LevelEntry.new("Level 6", "res://Scenes/Levels/levelButton.tscn"),
+	LevelEntry.new("Level 7", "res://Scenes/Levels/tutoLaser.tscn"),
+	LevelEntry.new("Level 8", "res://Scenes/Levels/level_Final.tscn"),
 ]
 
 @onready var level_container: HFlowContainer = %LevelContainer
