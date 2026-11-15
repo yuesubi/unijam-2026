@@ -13,8 +13,8 @@ func _ready() -> void:
 
 
 func _on_play_button_pressed() -> void:
-	switching_to.emit(preload("res://Scenes/Menus/level_selection_menu.tscn"))
 	SoundtrackManager.stop_main_menu()
+	switching_to.emit(preload("res://Scenes/Menus/level_selection_menu.tscn"))
 	# get_tree().change_scene_to_file("res://Scenes/level_selection.tscn")
 
 
