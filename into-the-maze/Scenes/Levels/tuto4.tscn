@@ -17,3 +17,15 @@ zoom = Vector2(0.8, 0.8)
 [node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1877904564]
 position = Vector2(812, 341.50003)
 scale = Vector2(5.84375, 5.3046875)
+
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
+position = Vector2(-1192.9999, 379.99997)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
+position = Vector2(-872, 236)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
+position = Vector2(-625, 125)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
+position = Vector2(-705, 186)

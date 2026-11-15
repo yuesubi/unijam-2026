@@ -23,3 +23,15 @@ position = Vector2(605, -67)
 [node name="Sprite2D" parent="level_base2" index="4" unique_id=1877904564]
 position = Vector2(611, 178)
 scale = Vector2(13.734375, 3.828125)
+
+[node name="fondNormal" parent="level_base2" index="5" unique_id=605897269]
+position = Vector2(-1522.9999, 65.99999)
+
+[node name="blueBack" parent="level_base2" index="6" unique_id=658004868]
+position = Vector2(-2099, 138)
+
+[node name="tvbutton" parent="level_base2" index="7" unique_id=683474113]
+position = Vector2(-680, 0)
+
+[node name="rubalise" parent="level_base2" index="8" unique_id=1447633655]
+position = Vector2(-1512, 166)

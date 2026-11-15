@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cskiwq822fd1o"]
 
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_7u4ml"]
+[ext_resource type="Texture2D" uid="uid://d0yeoxobnfrhg" path="res://Assets/back/Rubalise.png" id="2_16p8j"]
 
 [node name="level_base" unique_id=402574150 instance=ExtResource("1_7u4ml")]
 
@@ -20,3 +21,38 @@ zoom = Vector2(0.67, 0.67)
 [node name="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="4" unique_id=1877904564]
 position = Vector2(1204, 338.5)
 scale = Vector2(5.921875, 6.6953125)
+
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
+position = Vector2(329.49997, 341.99997)
+scale = Vector2(0.494, 0.5959004)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
+position = Vector2(1313.5, 311.5)
+scale = Vector2(1.135, 1.163)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
+position = Vector2(-579, 457)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
+position = Vector2(329.50003, -84.5)
+scale = Vector2(1.3046875, 1.1953125)
+
+[node name="rubalise2" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="9" unique_id=1604058874]
+z_index = -100
+position = Vector2(328, 775)
+scale = Vector2(1.3046875, 1.1953125)
+texture = ExtResource("2_16p8j")
+
+[node name="rubalise3" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="10" unique_id=778429710]
+z_index = -100
+position = Vector2(-25.590073, 349.56274)
+rotation = -1.545759
+scale = Vector2(1.2310308, 1.1953125)
+texture = ExtResource("2_16p8j")
+
+[node name="rubalise4" type="Sprite2D" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="11" unique_id=1622763836]
+z_index = -100
+position = Vector2(670, 364.99994)
+rotation = -1.5707964
+scale = Vector2(1.2310308, 1.1953125)
+texture = ExtResource("2_16p8j")

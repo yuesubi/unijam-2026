@@ -25,6 +25,18 @@ zoom = Vector2(0.5, 0.5)
 position = Vector2(1615, 208.49997)
 scale = Vector2(8.0625, 8.6796875)
 
+[node name="fondNormal" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="5" unique_id=605897269]
+position = Vector2(-1371.9999, 20.999998)
+
+[node name="blueBack" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="6" unique_id=658004868]
+position = Vector2(-1906, 62)
+
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
+position = Vector2(-746, -59)
+
+[node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
+position = Vector2(-1219, 62)
+
 [node name="b11" parent="." index="1" unique_id=899705201 node_paths=PackedStringArray("linked_walls") instance=ExtResource("2_odnog")]
 position = Vector2(124, 510)
 linked_walls = [NodePath("../e11")]
