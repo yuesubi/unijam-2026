@@ -80,5 +80,8 @@ func spawn_cross(pos):
 
 
 func _on_success_menu_go_to_selector() -> void:
+	# SFX
+	SoundtrackManager.stop_main_game()
+	
 	GameData.scene_to_load = "res://Scenes/Menus/level_selection_menu.tscn"
 	get_tree().change_scene_to_file("res://Scenes/SceneContainers/meta_menu.tscn")
