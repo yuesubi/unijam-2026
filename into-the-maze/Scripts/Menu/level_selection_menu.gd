@@ -1,5 +1,8 @@
 extends "res://Scripts/contenerized_scene.gd"
 
+signal back(scene: PackedScene)
+var main_menu_scene = preload("res://Scenes/Menus/main_menu.tscn")
+
 class LevelEntry:
 	var name: String
 	var scene_path: String
@@ -34,8 +37,18 @@ func _ready() -> void:
 				GameData.scene_to_load = level.scene_path
 				get_tree().change_scene_to_file("res://Scenes/SceneContainers/level_container.tscn")
 		)
+		button.mouse_entered.connect(button_hover)
 		level_container.add_child(button)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func button_hover() :
+	SfxPlayer.play(SfxPlayer.Hover)
+
+
+
+
+func _on_back_button_pressed() -> void:
+	back.emit(main_menu_scene)
