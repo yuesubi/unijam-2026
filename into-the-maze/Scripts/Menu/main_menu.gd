@@ -3,9 +3,7 @@ extends "res://Scripts/contenerized_scene.gd"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	SfxPlayer.audioStream = %SFXAudioPlayer.get_stream_playback()
-	SoundtrackManager.audioStream = %SoundtrackAudioPlayer.get_stream_playback()
-	SoundtrackManager.play_main_menu()
+	pass
 
 
 

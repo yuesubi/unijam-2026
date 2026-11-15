@@ -4,6 +4,10 @@
 [ext_resource type="Script" uid="uid://bu8uumjti4kco" path="res://Scripts/Menu/meta_menu.gd" id="1_c0sjl"]
 [ext_resource type="PackedScene" uid="uid://bw6nupoeb4a04" path="res://Scenes/Menus/main_menu.tscn" id="2_c0sjl"]
 
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_c0sjl"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_tioky"]
+
 [node name="MetaMenu" type="Control" unique_id=561338844]
 layout_mode = 3
 anchors_preset = 15
@@ -22,3 +26,21 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8r5se")
 default_scene = ExtResource("2_c0sjl")
+
+[node name="SFXAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1277843473]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_c0sjl")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"SFX"
+
+[node name="SoundtrackAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1823608482]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_tioky")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"Soundtrack"
