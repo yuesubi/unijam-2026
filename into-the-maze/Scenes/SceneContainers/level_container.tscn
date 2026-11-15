@@ -1,8 +1,32 @@
 [gd_scene format=3 uid="uid://dde7s6h50w6ov"]
 
 [ext_resource type="Script" uid="uid://cvqd7lunea645" path="res://Scripts/scene_holder.gd" id="1_k3orc"]
+[ext_resource type="Script" uid="uid://ckn8lra7x6h1m" path="res://Scripts/meta_main_game.gd" id="1_liiwg"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_k3orc"]
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_liiwg"]
 
 [node name="LevelContainer" type="Node2D" unique_id=942753716]
+script = ExtResource("1_liiwg")
 
 [node name="LevelHolder" type="Node2D" parent="." unique_id=1611239166]
 script = ExtResource("1_k3orc")
+
+[node name="SFXAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=727131638]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_k3orc")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"SFX"
+
+[node name="SoundtrackAudioPlayer" type="AudioStreamPlayer2D" parent="." unique_id=236139754]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPolyphonic_liiwg")
+autoplay = true
+attenuation = 0.0
+max_polyphony = 5
+panning_strength = 0.0
+bus = &"Soundtrack"
