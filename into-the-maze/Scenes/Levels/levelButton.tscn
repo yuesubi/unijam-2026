@@ -34,6 +34,9 @@ scale = Vector2(0.635, 0.7737921)
 position = Vector2(1268, 334)
 scale = Vector2(1.23, 1.276)
 
+[node name="tvbutton" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="7" unique_id=683474113]
+position = Vector2(-760, 234)
+
 [node name="rubalise" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="8" unique_id=1447633655]
 position = Vector2(141.5, -202.5)
 scale = Vector2(1.7453125, 1.1640625)
