@@ -2,41 +2,45 @@
 
 [ext_resource type="PackedScene" uid="uid://c7q4y8ug8og56" path="res://Scenes/level_base.tscn" id="1_oees7"]
 [ext_resource type="PackedScene" uid="uid://k853sanxs4hq" path="res://Scenes/button/button.tscn" id="2_lsky8"]
+[ext_resource type="Texture2D" uid="uid://cf2lsp2od0ra7" path="res://Assets/spider/Spider_Right.png" id="2_wnxse"]
 [ext_resource type="PackedScene" uid="uid://ba8tmddrsgu8t" path="res://Scenes/button/bomb_wall.tscn" id="3_xi1o6"]
 [ext_resource type="PackedScene" uid="uid://c5ei7li4risa4" path="res://Scenes/button/radar_button.tscn" id="4_v1qq4"]
 [ext_resource type="PackedScene" uid="uid://ca3mxg3j3gm5h" path="res://Scenes/portal/portal.tscn" id="5_vig6h"]
+[ext_resource type="PackedScene" uid="uid://ddtidhypefqra" path="res://Scenes/portal/portal_radar.tscn" id="7_ccywu"]
 
 [node name="test_level" unique_id=402574150 instance=ExtResource("1_oees7")]
 
-[node name="Player" parent="." index="0" unique_id=1499959281]
+[node name="Player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="0" unique_id=1499959281]
 position = Vector2(0, 129)
 
-[node name="invis_player" parent="." index="1" unique_id=1802008750]
+[node name="invis_player" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="1" unique_id=1802008750]
 position = Vector2(0, 377)
 
-[node name="Sprite2D" parent="invis_player" index="0" unique_id=1184983573]
-visible = true
+[node name="invis_player#Sprite2D" type="Sprite2D" parent="level_base2/invis_player" index="0" unique_id=1184983573]
+modulate = Color(1, 0.39215687, 0.39215687, 1)
+position = Vector2(64, 64)
+texture = ExtResource("2_wnxse")
 
-[node name="TileMap" parent="." index="2" unique_id=1646785559]
+[node name="TileMap" parent="level_base2" parent_id_path=PackedInt32Array(402574150) index="2" unique_id=1646785559]
 tile_map_data = PackedByteArray("AAAIAAEACwABAAAAAAAIAAMACwABAAAAAAABAAIACwAAAAAAAAABAAAACwAAAAAAAAACAAAACwAAAAAAAAADAAAACwAAAAAAAAAEAAAACwAAAAAAAAAEAAEACwAAAAAAAAAFAAEACwAAAAAAAAAFAAAACwAAAAAAAAADAAEACwAAAAAAAAACAAEACwAAAAAAAAABAAEACwAAAAAAAAACAAIACwAAAAAAAAACAAMACwAAAAAAAAABAAMACwAAAAAAAAABAAQACwAAAAAAAAAEAAMACwAAAAAAAAAFAAMACwAAAAAAAAAGAAMACwAAAAAAAAADAAMACwAAAAAAAAAFAAIACwAAAAAAAAAGAAQACwAAAAAAAAAGAAAACwAAAAAAAAAGAAEACwAAAAAAAAAHAAAACwAAAAAAAAAIAAAACwABAAAAAAAIAAIACwABAAAAAAAHAAIACwAAAAAAAAAHAAMACwAAAAAAAAAHAAQACwAAAAAAAAAIAAQACwABAAAAAAAAAAEACwAAAAAAAAAAAAIACwAAAAAAAAAAAAMACwAAAAAAAAAAAAQACwAAAAAAAAACAAQACwAAAAAAAAADAAQACwAAAAAAAAAEAAQACwAAAAAAAAAFAAQACwAAAAAAAAAGAAIACwAAAAAAAAADAAIACwAAAAAAAAAEAAIACwAAAAAAAAD/////CwABAAAAAAD//wAACwABAAAAAAD//wEACwABAAAAAAD//wIACwABAAAAAAD//wMACwABAAAAAAD//wQACwABAAAAAAD//wUACwABAAAAAAAAAAUACwABAAAAAAABAAUACwABAAAAAAACAAUACwABAAAAAAADAAUACwABAAAAAAAEAAUACwABAAAAAAAFAAUACwABAAAAAAAGAAUACwABAAAAAAAHAAUACwABAAAAAAAIAAUACwABAAAAAAAIAP//CwABAAAAAAAHAP//CwABAAAAAAAGAP//CwABAAAAAAAFAP//CwABAAAAAAAEAP//CwABAAAAAAADAP//CwABAAAAAAACAP//CwABAAAAAAABAP//CwABAAAAAAAAAP//CwABAAAAAAAHAAEACwAAAAAAAAAAAAAACwAAAAAAAAA=")
 
-[node name="StaticBody2D" parent="." index="3" unique_id=625301696 instance=ExtResource("3_xi1o6")]
+[node name="StaticBody2D" parent="." index="2" unique_id=625301696 instance=ExtResource("3_xi1o6")]
 position = Vector2(765, 133)
 
-[node name="button" parent="." index="4" unique_id=899705201 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_lsky8")]
+[node name="button" parent="." index="3" unique_id=899705201 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("2_lsky8")]
 position = Vector2(386, 124)
 linked_walls = [NodePath("../StaticBody2D")]
 linked_buttons = [NodePath("../button2")]
 
-[node name="button2" parent="." index="5" unique_id=56636828 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_v1qq4")]
+[node name="button2" parent="." index="4" unique_id=56636828 node_paths=PackedStringArray("linked_walls", "linked_buttons") instance=ExtResource("4_v1qq4")]
 position = Vector2(509, 379)
 linked_walls = [NodePath("../StaticBody2D")]
 linked_buttons = [NodePath("../button")]
 
-[node name="Portal2" parent="." index="7" unique_id=666642668 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
-position = Vector2(255, -12)
-linkedPortal = NodePath("../Portal")
-
-[node name="Portal" parent="." index="8" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
+[node name="Portal" parent="." index="5" unique_id=1833809616 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("5_vig6h")]
 position = Vector2(255, 384)
 linkedPortal = NodePath("../Portal2")
+
+[node name="Portal2" parent="." index="6" unique_id=399776018 node_paths=PackedStringArray("linkedPortal") instance=ExtResource("7_ccywu")]
+position = Vector2(247, 2)
+linkedPortal = NodePath("../Portal")
